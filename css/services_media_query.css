@@ -1,0 +1,804 @@
+@media only screen and (min-width: 981px) and (max-width: 1400px) {
+
+  /*laptop and small lcd [1001px -> 1200px]*/
+  .hero-bg-img {
+    height: 30rem;
+    background-image: url(../Pictures/our-services.png);
+    background-size: cover;
+  }
+
+  .main-div {
+    height: 30rem;
+    background-color: hsl(233deg 32% 27% / 50%);
+  }
+
+  .main-navbar {
+    height: 16%;
+  }
+
+  .navbar {
+    width: 90%;
+    height: 70%;
+  }
+
+  .header-left {
+    width: 25%;
+    justify-content: flex-start;
+  }
+
+  .header-left-box {
+    width: 90%;
+  }
+
+  .services-heading-box {
+    width: 90%;
+  }
+
+  .business-visa-view-detail-div {
+    width: 35%;
+  }
+
+  .services-detail-div {
+    width: 85%;
+  }
+
+  .more-services-main-div {
+    width: 90%;
+  }
+
+  .more-services-card-1 {
+    width: 30%;
+    height: 28rem;
+  }
+
+  .more-services-card-1-detail {
+    height: 45%;
+  }
+
+  .guidance-at-every-step-main-div {
+    width: 95%;
+  }
+
+  .guidance-at-every-step-card-1-heading {
+    font-size: 1.5rem;
+  }
+
+  .footer-box {
+    width: 95%;
+  }
+
+  .left-footer-center input {
+    width: 65%;
+  }
+
+  .left-footer-center {
+    width: 100%;
+  }
+
+  .left-footer-center-btn {
+    font-size: 1rem;
+    right: 33%;
+    bottom: 45%;
+  }
+
+  .footer-center-heading-div {
+    width: 65%;
+  }
+
+  .footer-right-icon-contact {
+    width: 10%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+  /*tablet [769px -> 980px]*/
+
+  #scroll-progress-bar {
+    display: none;
+  }
+
+  .hero-bg-img {
+    height: 40rem;
+    background-image: url(../Pictures/our-services-1.png);
+    background-size: cover;
+  }
+
+  .main-div {
+    height: 40rem;
+    background-color: hsl(233deg 32% 27% / 50%);
+  }
+
+  .main-navbar {
+    height: 12%;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 70%;
+  }
+
+  .header-right-ul-li-a {
+    font-size: 1rem;
+  }
+
+  .header-left {
+    width: 25%;
+    justify-content: flex-start;
+  }
+
+  .header-left-box {
+    width: 95%;
+  }
+
+  .header-right-box-btn {
+    margin-right: 10px;
+  }
+
+  .header-right-btn {
+    font-size: 1rem;
+    height: 2.2rem;
+    width: 7rem;
+  }
+
+  .services-tag-line {
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .expert-visa-assistance {
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  .services-heading-box {
+    width: 95%;
+  }
+
+  .services-heading-left {
+    width: 55%;
+  }
+
+  .business-visa-div {
+    width: 95%;
+  }
+
+  .business-visa-icon-div-sm {
+    width: 15%;
+  }
+
+  .business-visa-icon-div-sm img {
+    height: 40%;
+  }
+
+  .business-visa-name-div {
+    font-size: 1.5rem;
+    width: 55%;
+  }
+
+  .business-visa-view-detail-div {
+    width: 30%;
+    font-size: 1rem;
+    justify-content: flex-end;
+    margin-right: 0.5rem;
+  }
+
+  .business-visa-view-detail-div p {
+    width: 75%;
+    margin-right: 0.5rem;
+  }
+
+  .services-heading-right {
+    width: 50%;
+  }
+
+  .services-detail-div {
+    width: 85%;
+  }
+
+  .services-detail-heading {
+    width: 100%;
+    height: 20%;
+    font-family: zurchn-regular;
+    font-size: 1.8rem;
+  }
+
+  .services-detail-para {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .more-services-main-div {
+    width: 90%;
+  }
+
+  .more-services-card-1 {
+    width: 30%;
+    height: 25rem;
+    margin: 1rem 0.5rem;
+  }
+
+  .more-services-card-1-img {
+    height: 15%;
+  }
+
+  .more-services-card-1-heading {
+    width: 95%;
+    height: 15%;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .more-services-card-1-detail {
+    height: 55%;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .view-detail-div {
+    font-size: 1rem;
+  }
+
+  .guidance-at-every-step-main-div {
+    width: 95%;
+  }
+
+  .guidance-at-every-step-card-1 {
+    width: 32%;
+  }
+
+  .guidance-at-every-step-card-1-heading {
+    font-size: 1rem;
+  }
+
+  .guidance-at-every-step-card-1-icon img {
+    height: 4rem;
+  }
+
+  .guidance-at-every-step-card-1-detail {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .footer-box {
+    width: 95%;
+  }
+
+  .footer-logo-div img {
+    width: 80%;
+  }
+
+  .left-footer-center input {
+    font-size: 1.1rem;
+    width: 87%;
+  }
+
+  .left-footer-center-btn {
+    font-size: 1rem;
+    right: 11%;
+    bottom: 47%;
+  }
+
+  .footer-center-heading-div {
+    width: 70%;
+  }
+
+  .footer-center-div {
+    width: 40%;
+  }
+
+  .footer-right-div {
+    width: 60%;
+  }
+
+  .footer-center-heading-div {
+    width: 90%;
+  }
+
+  .footer-right-icon-contact {
+    width: 15%;
+  }
+
+  .footer-right-contact-detail {
+    width: 85%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .footer-center-div-1-1 {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /*smartphones [768px]*/
+  #scroll-progress-bar {
+    display: none;
+  }
+
+  .loader-img {
+    width: 80%;
+  }
+
+  .ms-header-box {
+    display: flex;
+    width: 100%;
+    height: 20rem;
+  }
+
+  .hero-bg-img {
+    height: 20rem;
+    background-image: url(../Pictures/our-services-2.png);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  .main-div {
+    height: 20rem;
+  }
+
+  .main-navbar {
+    height: 20%;
+    color: white;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding-right: 1.25rem;
+    align-items: center;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .ms-nav-icon {
+    display: none;
+    z-index: 99999;
+  }
+
+  .header-left {
+    width: 65%;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .sm-nav-main-div {
+    width: 100%;
+    height: 60rem;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    background-color: #2f345b;
+  }
+
+  .ms-navbar {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.842);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px 3px #2f345b;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0%;
+    right: -60%;
+  }
+
+  .sm-nav-main-div-cross {
+    width: 100%;
+    height: 5%;
+    color: #2f345b;
+    font-size: 1.8rem;
+    justify-content: right;
+    box-sizing: border-box;
+    padding-right: 1.25rem;
+  }
+
+  .sm-nav-main-div-ul {
+    width: 100%;
+    height: 25%;
+    color: #2f345b;
+    font-family: zurchn-regular;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .sm-nav-main-div-ul li {
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .sm-nav-main-div-ul li:hover {
+    width: 100%;
+    background-color: rgba(73, 73, 73, 0.164);
+  }
+
+  .sm-nav-main-div-btn {
+    width: 100%;
+    height: 20%;
+  }
+
+  .sm-nav-main-div-btn button {
+    background-color: #2f345b;
+    color: white;
+    font-family: "zurchn-regular";
+    font-size: 1rem;
+    width: 60%;
+    height: 20%;
+    border: none;
+    border-radius: 0.5rem;
+  }
+
+  .contact-nav-div {
+    width: 100%;
+    height: 50%;
+    align-items: self-start;
+    justify-content: flex-start;
+    padding: 0px 10px;
+  }
+
+  .contact-nav-div-ul {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .contact-nav-div-ul-li {
+    color: #2f345b;
+    font-family: zurchn-regular;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .main-div-p {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .services-tag-line {
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    padding: 0rem 1rem;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+
+  .services-heading-div {
+    display: none;
+  }
+
+  .services-heading-div-sm {
+    display: flex;
+    width: 100%;
+  }
+
+  .services-heading-box {
+    width: 90%;
+    height: 100%;
+  }
+
+  .business-visa-heading-detail-box-sm {
+    width: 100%;
+    height: 5rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .expert-visa-assistance {
+    font-size: 2rem;
+  }
+
+  .services-heading-left {
+    width: 100%;
+    height: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .business-visa-div-sm {
+    width: 90%;
+    height: 80%;
+    border-radius: 1rem;
+    border: #f2cd74 solid 2px;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.03);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .business-visa-icon-div-sm {
+    width: 15%;
+    height: 100%;
+  }
+
+  .business-visa-icon-div-sm img {
+    height: 40%;
+  }
+
+  .business-visa-name-div-sm {
+    width: 65%;
+    height: 100%;
+    font-family: zurchn-regular;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #c59c3d;
+    text-transform: capitalize;
+    justify-content: flex-start;
+  }
+
+  .business-visa-view-detail-div-sm {
+    width: 20%;
+    height: 100%;
+    font-family: zurchn-regular;
+    font-size: 0.8rem;
+    color: #c59c3d;
+    justify-content: flex-start;
+  }
+
+  .business-visa-view-detail-div-sm p {
+    width: 60%;
+  }
+
+  .business-visa-view-detail-div-sm img {
+    width: 25%;
+  }
+
+  .services-detail-div-sm {
+    width: 90%;
+    height: 65%;
+    background-color: #2f345b;
+    border-radius: 1rem;
+    flex-direction: column;
+    display: none;
+    opacity: 0;
+    box-shadow: 0 0 7px 3px #f2cd74;
+    /* ✨ added shadow */
+  }
+
+  .services-detail-div-sm.active {
+    display: flex !important;
+    opacity: 1;
+  }
+
+  .services-detail-icon {
+    width: 100%;
+    height: 20%;
+  }
+
+  .services-detail-icon img {
+    width: 20%;
+  }
+
+  .services-detail-heading {
+    width: 100%;
+    height: 20%;
+    font-family: zurchn-regular;
+    font-size: 2.2rem;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .services-detail-para {
+    width: 90%;
+    height: 40%;
+    font-family: zurchn-regular;
+    font-size: 1.2rem;
+    color: #f2cd74;
+    text-align: center;
+    line-height: 2rem;
+    align-items: self-start;
+  }
+
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes zoomOut {
+    0% {
+      transform: scale(1.05);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .more-services-main-div {
+    width: 95%;
+  }
+
+  .main-heading-services-div {
+    font-size: 1.9rem;
+    margin: 1rem;
+  }
+
+  .more-services-card-1 {
+    width: 90%;
+    height: 25rem;
+    border-radius: 1.5rem;
+    margin: 1rem;
+  }
+
+  .more-services-card-1-img {
+    height: 17%;
+  }
+
+  .more-services-card-1-img img {
+    height: 60%;
+  }
+
+  .more-services-card-1-heading {
+    height: 18%;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
+  .more-services-card-1-detail {
+    height: 50%;
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .view-detail-div {
+    height: 20%;
+    font-size: 1rem;
+  }
+
+  .view-more-btn {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .view-more-btn button {
+    padding: 0.2rem;
+    font-size: 1rem;
+    width: 45%;
+    border-radius: 0.3rem;
+  }
+
+  .view-more-btn button img {
+    width: 15%;
+  }
+
+  .view-more-btn {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .less-more-btn button {
+    padding: 0.2rem;
+    font-size: 1rem;
+    width: 45%;
+    border-radius: 0.3rem;
+  }
+
+  .less-more-btn button img {
+    width: 15%;
+  }
+
+  .expert-visa-heading-div {
+    height: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.7rem;
+  }
+
+  .guidance-at-every-step-main-div {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guidance-at-every-step-card-1 {
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+  .guidance-at-every-step-card-1-heading {
+    padding: 1.2rem 0;
+    font-size: 1.2rem;
+  }
+
+  .guidance-at-every-step-card-1-detail {
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .main-footer-div {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .footer-box {
+    width: 95%;
+    height: 95%;
+  }
+
+  .footer-box-top {
+    display: none;
+  }
+
+  .footer-center-div-1-1 {
+    width: 50%;
+  }
+
+  .footer-box-bottom {
+    height: 50%;
+  }
+
+  .left-footer-center-bottom {
+    justify-content: center;
+  }
+
+  .footer-center-icon-cls {
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-e-mail-div-2 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+  }
+
+  .left-footer-center input {
+    border-bottom: 2px solid #2f345b;
+  }
+
+  .left-footer-center input {
+    width: 87%;
+  }
+
+  .left-footer-center-btn {
+    font-size: 1rem;
+    border-radius: 5px;
+    right: 11%;
+    bottom: 30%;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    height: 30%;
+  }
+}

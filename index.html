@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="icon" type="png" href="./Pictures/instagram logo.png" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./font awesom/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/media query.css" />
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="loader">
+      <img src="./Pictures/logo.png" alt="Logo" class="loader-img" />
+    </div>
+  </div>
+  <div id="scroll-progress-bar"></div>
+  <!-- navbar -mobiile screen start -->
+  <div class="sm-nav-main-div">
+    <div class="ms-navbar">
+      <div class="sm-nav-main-div-cross">
+        <i class="fa fa-times" onclick="msCross()" aria-hidden="true"></i>
+      </div>
+      <ul class="sm-nav-main-div-ul">
+        <li class="sm-nav-main-div-ul-li">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="sm-nav-main-div-ul-li">
+          <a href="about_us.html">About us</a>
+        </li>
+        <li class="sm-nav-main-div-ul-li">
+          <a href="services.html">Services</a>
+        </li>
+        <li class="sm-nav-main-div-ul-li">
+          <a href="#">Blog</a>
+        </li>
+        <li class="sm-nav-main-div-ul-li">
+          <a href="contact_us.html">Contact us</a>
+        </li>
+      </ul>
+      <div class="sm-nav-main-div-btn">
+        <button>Login/Signup</button>
+      </div>
+      <div class="contact-nav-div">
+        <ul class="contact-nav-div-ul">
+          <li class="contact-nav-div-ul-li">
+            <p>+92 300 960 1729</p>
+          </li>
+          <li class="contact-nav-div-ul-li">
+            <p>info@traveldementor.com</p>
+          </li>
+          <li class="contact-nav-div-ul-li">
+            <p>71-1, Opp. Civil Defence Office, Sargodha-40100-Pakistan</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="hero-bg-img">
+    <div class="main-div">
+      <!-- navbar -laptop and tablet screen start -->
+      <div class="main-navbar">
+        <div class="navbar">
+          <div class="header-left">
+            <div class="header-left-box">
+              <a href="index.html">
+                <img src="./Pictures/logo-slogan-white.png" alt="" class="logo-img" />
+              </a>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="header-right-box">
+              <ul class="header-right-ul">
+                <li class="header-right-ul-li">
+                  <a href="index.html" class="header-right-ul-li-a">Home</a>
+                </li>
+                <li class="header-right-ul-li">
+                  <a href="about_us.html" class="header-right-ul-li-a">About us</a>
+                </li>
+                <li class="header-right-ul-li">
+                  <a href="services.html" class="header-right-ul-li-a">Services</a>
+                </li>
+                <!-- <li class="header-right-ul-li">
+                                    <a href="#" class="header-right-ul-li-a">Exhibition</a>
+                                </li> -->
+                <li class="header-right-ul-li">
+                  <a href="#" class="header-right-ul-li-a">Blog</a>
+                </li>
+                <li class="header-right-ul-li">
+                  <a href="contact_us.html" class="header-right-ul-li-a">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-right-box-btn">
+              <button class="header-right-btn">Login/Signup</button>
+            </div>
+          </div>
+        </div>
+        <i class="fa fa-bars ms-nav-icon" onclick="msbar()" aria-hidden="true"></i>
+      </div>
+      <!-- navbar -laptop and tablet screen end -->
+      <p class="main-div-p">Navigating Visas, Simplifying Journeys</p>
+    </div>
+  </div>
+  <!-- seach-bar-div-laptop and tablet screen start -->
+
+  <div class="search-bar-div">
+    <div class="search-box">
+      <div class="label-select-div">
+        <div class="lable">
+          <span> Where am I from? </span>
+        </div>
+        <div class="select">
+          <div class="custom-select-wrapper">
+            <div class="custom-select-box b-radius">
+              <span class="selectedValue">
+                <img class="selectedFlag" src="" alt="" />
+                <span class="selectedText">Select a country</span>
+              </span>
+              <div class="dropdown-icon dropdownIcon"></div>
+              <div class="custom-dropdown customDropdown">
+                <input type="text" class="searchInput" placeholder="Search..." />
+
+                <div class="option" data-value="pk" data-flag="https://flagcdn.com/w40/pk.png">
+                  <img src="https://flagcdn.com/w40/pk.png" alt="PK" />
+                  Pakistan
+                </div>
+                <div class="option" data-value="us" data-flag="https://flagcdn.com/w40/us.png">
+                  <img src="https://flagcdn.com/w40/us.png" alt="US" /> United
+                  States
+                </div>
+                <div class="option" data-value="gb" data-flag="https://flagcdn.com/w40/gb.png">
+                  <img src="https://flagcdn.com/w40/gb.png" alt="GB" /> United
+                  Kingdom
+                </div>
+                <div class="option" data-value="in" data-flag="https://flagcdn.com/w40/in.png">
+                  <img src="https://flagcdn.com/w40/in.png" alt="IN" /> India
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="label-select-div">
+        <div class="lable">
+          <span> Where am I going? </span>
+        </div>
+        <div class="select">
+          <div class="custom-select-wrapper">
+            <div class="custom-select-box">
+              <span class="selectedValue">
+                <img class="selectedFlag" src="" alt="" />
+                <span class="selectedText">Select a country</span>
+              </span>
+              <div class="dropdown-icon dropdownIcon"></div>
+              <div class="custom-dropdown customDropdown">
+                <input type="text" class="searchInput" placeholder="Search..." />
+
+                <div class="option" data-value="pk" data-flag="https://flagcdn.com/w40/pk.png">
+                  <img src="https://flagcdn.com/w40/pk.png" alt="PK" />
+                  Pakistan
+                </div>
+                <div class="option" data-value="us" data-flag="https://flagcdn.com/w40/us.png">
+                  <img src="https://flagcdn.com/w40/us.png" alt="US" /> United
+                  States
+                </div>
+                <div class="option" data-value="gb" data-flag="https://flagcdn.com/w40/gb.png">
+                  <img src="https://flagcdn.com/w40/gb.png" alt="GB" /> United
+                  Kingdom
+                </div>
+                <div class="option" data-value="in" data-flag="https://flagcdn.com/w40/in.png">
+                  <img src="https://flagcdn.com/w40/in.png" alt="IN" /> India
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="label-select-div">
+        <div class="lable">
+          <span> Category </span>
+        </div>
+        <div class="select">
+          <div class="custom-select-wrapper">
+            <div class="custom-select-box">
+              <img class="selectedFlag" src="" alt="" />
+              <span class="selectedText">Select a country</span>
+              <span class="selectedValue"> </span>
+              <div class="dropdown-icon dropdownIcon"></div>
+              <div class="custom-dropdown customDropdown">
+                <input type="text" class="searchInput" placeholder="Search..." />
+
+                <div class="option" data-value="pk" data-flag="https://flagcdn.com/w40/pk.png">
+                  <img src="https://flagcdn.com/w40/pk.png" alt="PK" />
+                  Pakistan
+                </div>
+                <div class="option" data-value="us" data-flag="https://flagcdn.com/w40/us.png">
+                  <img src="https://flagcdn.com/w40/us.png" alt="US" /> United
+                  States
+                </div>
+                <div class="option" data-value="gb" data-flag="https://flagcdn.com/w40/gb.png">
+                  <img src="https://flagcdn.com/w40/gb.png" alt="GB" /> United
+                  Kingdom
+                </div>
+                <div class="option" data-value="in" data-flag="https://flagcdn.com/w40/in.png">
+                  <img src="https://flagcdn.com/w40/in.png" alt="IN" /> India
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-div">
+        <button>Search</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- seach-bar-div-laptop and tablet screen end -->
+  <!-- navbar -mobiile screen end -->
+  <div class="ms-header-box">
+    <div class="hero-bg-img">
+      <div class="main-div">
+        <!-- navbar -laptop and tablet screen start -->
+
+        <div class="main-navbar">
+          <div class="navbar">
+            <div class="header-left">
+              <div class="header-left-box">
+                <img src="./Pictures/logo-slogan-white.png" alt="" class="logo-img" />
+              </div>
+            </div>
+            <div class="header-right">
+              <div class="header-right-box">
+                <ul class="header-right-ul">
+                  <li class="header-right-ul-li">
+                    <a href="#" class="header-right-ul-li-a">Home</a>
+                  </li>
+                  <li class="header-right-ul-li">
+                    <a href="#" class="header-right-ul-li-a">About us</a>
+                  </li>
+                  <li class="header-right-ul-li">
+                    <a href="services.html" class="header-right-ul-li-a">Services</a>
+                  </li>
+                  <!-- <li class="header-right-ul-li">
+                                    <a href="#" class="header-right-ul-li-a">Exhibition</a>
+                                </li> -->
+                  <li class="header-right-ul-li">
+                    <a href="#" class="header-right-ul-li-a">Blog</a>
+                  </li>
+                  <li class="header-right-ul-li">
+                    <a href="contact_us.html" class="header-right-ul-li-a">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-right-box-btn">
+                <button class="header-right-btn">Login/Signup</button>
+              </div>
+            </div>
+          </div>
+          <i class="fa fa-bars ms-nav-icon" onclick="msbar()" aria-hidden="true"></i>
+        </div>
+        <!-- navbar -laptop and tablet screen end -->
+        <p class="main-div-p">Navigating Visas, Simplifying Journeys</p>
+      </div>
+    </div>
+    <!-- seach-bar-div-mobile screen start -->
+
+    <div class="ms-search-bar-div">
+      <div class="search-bar-div-ms">
+        <div class="search-box">
+          <div class="label-select-div">
+            <div class="lable">
+              <span> Where am I from? </span>
+            </div>
+            <div class="select">
+              <div class="custom-select-wrapper">
+                <div class="custom-select-box b-radius">
+                  <span class="selectedValue">
+                    <img class="selectedFlag" src="" alt="" />
+                    <span class="selectedText">Select a country</span>
+                  </span>
+                  <div class="dropdown-icon dropdownIcon"></div>
+                  <div class="custom-dropdown customDropdown">
+                    <input type="text" class="searchInput" placeholder="Search..." />
+
+                    <div class="option" data-value="pk" data-flag="https://flagcdn.com/w40/pk.png">
+                      <img src="https://flagcdn.com/w40/pk.png" alt="PK" />
+                      Pakistan
+                    </div>
+                    <div class="option" data-value="us" data-flag="https://flagcdn.com/w40/us.png">
+                      <img src="https://flagcdn.com/w40/us.png" alt="US" />
+                      United States
+                    </div>
+                    <div class="option" data-value="gb" data-flag="https://flagcdn.com/w40/gb.png">
+                      <img src="https://flagcdn.com/w40/gb.png" alt="GB" />
+                      United Kingdom
+                    </div>
+                    <div class="option" data-value="in" data-flag="https://flagcdn.com/w40/in.png">
+                      <img src="https://flagcdn.com/w40/in.png" alt="IN" />
+                      India
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="label-select-div">
+            <div class="lable">
+              <span> Where am I going? </span>
+            </div>
+            <div class="select">
+              <div class="custom-select-wrapper">
+                <div class="custom-select-box">
+                  <span class="selectedValue">
+                    <img class="selectedFlag" src="" alt="" />
+                    <span class="selectedText">Select a country</span>
+                  </span>
+                  <div class="dropdown-icon dropdownIcon"></div>
+                  <div class="custom-dropdown customDropdown">
+                    <input type="text" class="searchInput" placeholder="Search..." />
+
+                    <div class="option" data-value="pk" data-flag="https://flagcdn.com/w40/pk.png">
+                      <img src="https://flagcdn.com/w40/pk.png" alt="PK" />
+                      Pakistan
+                    </div>
+                    <div class="option" data-value="us" data-flag="https://flagcdn.com/w40/us.png">
+                      <img src="https://flagcdn.com/w40/us.png" alt="US" />
+                      United States
+                    </div>
+                    <div class="option" data-value="gb" data-flag="https://flagcdn.com/w40/gb.png">
+                      <img src="https://flagcdn.com/w40/gb.png" alt="GB" />
+                      United Kingdom
+                    </div>
+                    <div class="option" data-value="in" data-flag="https://flagcdn.com/w40/in.png">
+                      <img src="https://flagcdn.com/w40/in.png" alt="IN" />
+                      India
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="label-select-div">
+            <div class="lable">
+              <span> Category </span>
+            </div>
+            <div class="select">
+              <div class="custom-select-wrapper">
+                <div class="custom-select-box">
+                  <img class="selectedFlag" src="" alt="" />
+                  <span class="selectedText">Select a country</span>
+                  <span class="selectedValue"> </span>
+                  <div class="dropdown-icon dropdownIcon"></div>
+                  <div class="custom-dropdown customDropdown">
+                    <input type="text" class="searchInput" placeholder="Search..." />
+
+                    <div class="option" data-value="pk" data-flag="https://flagcdn.com/w40/pk.png">
+                      <img src="https://flagcdn.com/w40/pk.png" alt="PK" />
+                      Pakistan
+                    </div>
+                    <div class="option" data-value="us" data-flag="https://flagcdn.com/w40/us.png">
+                      <img src="https://flagcdn.com/w40/us.png" alt="US" />
+                      United States
+                    </div>
+                    <div class="option" data-value="gb" data-flag="https://flagcdn.com/w40/gb.png">
+                      <img src="https://flagcdn.com/w40/gb.png" alt="GB" />
+                      United Kingdom
+                    </div>
+                    <div class="option" data-value="in" data-flag="https://flagcdn.com/w40/in.png">
+                      <img src="https://flagcdn.com/w40/in.png" alt="IN" />
+                      India
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-div">
+            <button>Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- seach-bar-div-mobile screen end -->
+  </div>
+
+  <div class="choose-us-div">
+    <div class="choose-us-heading">
+      <div class="choose-us-heading-div">
+        <p class="choose-us-heading-p">why choose us?</p>
+      </div>
+      <div class="choose-us-p-div">
+        <p class="choose-us-heading-p-2">
+          Find out why we lead the travel document industry enabling travelers
+          to fly with ease.
+        </p>
+      </div>
+    </div>
+    <div class="choose-us-benefit">
+      <ul class="choose-us-benefit-ul">
+        <li class="choose-us-benefit-ul-li">
+          <div class="choose-us-benefit-ul-li-div">
+            <div class="choose-us-img">
+              <img src="./Pictures/Fast and hassle-free.png" alt="" class="choose-us-img-icon" />
+            </div>
+            <div class="choose-us-title">
+              <p class="choose-us-title-p">Fast and hassle-free</p>
+            </div>
+            <div class="choose-us-description">
+              <p class="choose-us-description-p">
+                Enjoy a far simpler process than dealing with foreign
+                governments.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="choose-us-benefit-ul-li">
+          <div class="choose-us-benefit-ul-li-div">
+            <div class="choose-us-img">
+              <img src="./Pictures/Secure and Safe.png" alt="" class="choose-us-img-icon" />
+            </div>
+            <div class="choose-us-title">
+              <p class="choose-us-title-p">Secure and Safe</p>
+            </div>
+            <div class="choose-us-description">
+              <p class="choose-us-description-p">
+                All your information is always protected with best-in-class
+                security.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="choose-us-benefit-ul-li">
+          <div class="choose-us-benefit-ul-li-div">
+            <div class="choose-us-img">
+              <img src="./Pictures/Get Approved.png" alt="" class="choose-us-img-icon" />
+            </div>
+            <div class="choose-us-title">
+              <p class="choose-us-title-p">Get Approved</p>
+            </div>
+            <div class="choose-us-description">
+              <p class="choose-us-description-p">
+                We have a 98% visa approval rate. Our team are committed to
+                your success!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="choose-us-benefit-ul-li">
+          <div class="choose-us-benefit-ul-li-div">
+            <div class="choose-us-img">
+              <img src="./Pictures/Awesome support.png" alt="" class="choose-us-img-icon" />
+            </div>
+            <div class="choose-us-title">
+              <p class="choose-us-title-p">Awesome support</p>
+            </div>
+            <div class="choose-us-description">
+              <p class="choose-us-description-p">
+                Don’t worry! Our customer support is ready to help you 24/7
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="choose-us-counter-div">
+      <div class="choose-us-counter-div-1">
+        <div class="choose-us-counter-div-1-1">
+          <p>98m</p>
+        </div>
+        <div class="choose-us-counter-div-1-2">
+          <p>Happy Customers</p>
+        </div>
+      </div>
+      <!-- <div class="choose-us-counter-div-1">
+                <div class="choose-us-counter-div-1-1">
+                    <p>24/7</p>
+                </div>
+                <div class="choose-us-counter-div-1-2">
+                    <p>Support</p>
+                </div>
+            </div> -->
+      <div class="choose-us-counter-div-1">
+        <div class="choose-us-counter-div-1-1">
+          <span class="fa fa-star star-cls"></span>
+          <span class="fa fa-star star-cls"></span>
+          <span class="fa fa-star star-cls"></span>
+          <span class="fa fa-star star-cls"></span>
+          <span class="fa fa-star star-cls"></span>
+        </div>
+        <div class="choose-us-counter-div-1-2">
+          <p>55,000+ Reviews</p>
+        </div>
+      </div>
+      <div class="choose-us-counter-div-1">
+        <div class="choose-us-counter-div-1-1">
+          <p>15</p>
+        </div>
+        <div class="choose-us-counter-div-1-2">
+          <p>Years of Experience</p>
+        </div>
+      </div>
+      <div class="choose-us-counter-div-1">
+        <div class="choose-us-counter-div-1-1">
+          <p>98%</p>
+        </div>
+        <div class="choose-us-counter-div-1-2">
+          <p>Visa Approval Rate</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="affiliations">
+    <p>Affiliations & Registrations</p>
+  </div>
+  <div class="sponsor">
+    <div class="sponsor-1">
+      <div class="sponsor-1-01">
+        <div class="sponsor-1-1">
+          <div class="sponsor-1-1-img">
+            <img src="./Pictures/DTS.png" alt="" class="sponsor-1-1-img-icon" />
+          </div>
+          <div class="sponsor-1-1-text">
+            <p>
+              Licensed Tour Operator by Department of Tourists Services,
+              Government of Pakistan
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sponsor-1-01">
+        <div class="sponsor-1-2">
+          <div class="sponsor-1-1-img">
+            <img src="./Pictures/NADRA_logo.png" alt="" class="sponsor-1-1-img-icon" />
+          </div>
+          <div class="sponsor-1-1-text">
+            <p>
+              Registered Tour Operator with the National Database and
+              Registration Authority (NADRA)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sponsor">
+    <div class="sponsor-1">
+      <div class="sponsor-1-01">
+        <div class="sponsor-1-1">
+          <div class="sponsor-1-1-img">
+            <img src="./Pictures/pato logo.png" alt="" class="sponsor-1-1-img-icon" />
+          </div>
+          <div class="sponsor-1-1-text">
+            <p>Member, Pakistan Association of Tour Operators (PATO)</p>
+          </div>
+        </div>
+      </div>
+      <div class="sponsor-1-01">
+        <div class="sponsor-1-2">
+          <div class="sponsor-1-1-img">
+            <img src="./Pictures/CGI.png" alt="" class="sponsor-1-2-img-icon" />
+          </div>
+          <div class="sponsor-1-1-text">
+            <p>
+              Registered Travel coordinator USTravelDocs (Offcial U.S.
+              Department of State Visa)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sponsor">
+    <div class="sponsor-1">
+      <div class="sponsor-1-01">
+        <div class="sponsor-1-1">
+          <div class="sponsor-1-1-img">
+            <img src="./Pictures/cropped-PCJCCI-logo.png" alt="" class="sponsor-1-1-img-icon" />
+          </div>
+          <div class="sponsor-1-1-text">
+            <p>Member, Pak-China Joint Chamber of Commerce & Industry</p>
+          </div>
+        </div>
+      </div>
+      <div class="sponsor-1-01">
+        <div class="sponsor-1-2">
+          <div class="sponsor-1-1-img">
+            <img src="./Pictures/authortized travel partner 2.png" alt="" class="sponsor-1-1-img-icon" />
+          </div>
+          <div class="sponsor-1-1-text">
+            <p>Authorized Travel Partner for International Exhibitions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="affiliations">
+    <p>Services</p>
+  </div>
+  <div class="services-main-div">
+    <div class="services-div">
+      <i class="fa fa-angle-left services-left-angle" aria-hidden="true"></i>
+      <div class="services-left">
+        <div class="services-left-box">
+          <div class="services-text-div">
+            <div class="services-img-div">
+              <img src="./Pictures/Business Visa.png" alt="" class="services-img" />
+            </div>
+            <div class="services-text-box">
+              <div class="services-text-box-div">
+                <p class="services-heading">BUSINESS VISA</p>
+                <p class="services-detail">
+                  Whether to attend a Business Meeting or to participate in an
+                  International Exhibition, We ensure you meet all
+                  requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="services-right">
+        <div class="services-left-box">
+          <div class="services-text-div">
+            <div class="services-img-div">
+              <img src="./Pictures/Tourist Visa.png" alt="" class="services-img" />
+            </div>
+            <div class="services-text-box">
+              <div class="services-text-box-div">
+                <p class="services-heading">TOURIST VISA</p>
+                <p class="services-detail">
+                  Ready to explore new Destinations? Let us handle the paper
+                  work and logistics of securing your tourist visa so you can
+                  focus on creating unforgettable travel memories
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i class="fa fa-angle-right services-left-angle" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="services-dots-div">
+    <div class="services-dots">
+      <div class="dot-1"></div>
+      <div class="dot-1"></div>
+      <div class="dot-1"></div>
+      <div class="dot-1"></div>
+      <div class="dot-1"></div>
+    </div>
+  </div>
+
+  <!-- <div class="affiliations">
+        <p>Exhibitions</p>
+    </div>
+    <div class="services-main-div">
+        <div class="services-div">
+            <i class="fa fa-angle-left exhibitions-left-angle" aria-hidden="true"></i>
+          <div class="exhibitions-left">
+            <div class="exhibitions-img-div">
+                <img src="./Pictures/image 2.png" alt="">
+            </div>
+          </div> 
+          <div class="exhibitions-right">
+            <div class="exhibitions-text-div">
+                 <div class="exhibitions-div-logo">
+                    <img src="./Pictures/chinaplas 2025.png" alt="">
+                 </div>
+                 <div class="exhibitions-div-detail">
+                    <p>
+                        the world's leading plastics and rubber trade fair
+                    </p>
+                 </div>
+                 <div class="exhibitions-div-date">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <p>2025. 4. 15 - 18</p>
+                 </div>
+                 <div class="exhibitions-div-location">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p> Shenzhen World Exhibition & Convention Center (Bao'an), PR China</p>
+                 </div>
+            </div>
+          </div> 
+          <i class="fa fa-angle-right exhibitions-left-angle" aria-hidden="true"></i>
+        </div>
+    </div> -->
+  <!-- <div class="exhibitions-div-slider">
+        <p> <span class="exhibitions-div-slider-span">1</span> / <span class="exhibitions-div-slider-span-1">5</span> </p>
+        <div class="exhibitions-slider-line"></div>
+    </div> -->
+  <div class="ex-blog-line">
+    <div class="full-line"></div>
+  </div>
+  <div class="blog-main-div">
+    <div class="blog-div">
+      <div class="blog-heading-div">
+        <p>latest blog</p>
+      </div>
+      <div class="blog-detail-div">
+        <i class="fa fa-angle-left blog-left-angle" aria-hidden="true"></i>
+        <div class="blog-detail-div-box">
+          <div class="blog-top-div">
+            <div class="blog-left-div">
+              <div class="blog-img-div"></div>
+            </div>
+            <div class="blog-right-div">
+              <div class="blog-text-detail-div">
+                <div class="blog-detail-heading-div">
+                  <p>Contact Us For Best Immigration</p>
+                </div>
+                <div class="blog-info-div">
+                  <div class="by-author-div">
+                    <p>by author</p>
+                  </div>
+                  <div class="comments-div">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                    <p>20 comments</p>
+                  </div>
+                </div>
+                <div class="blog-detail-text">
+                  <p>
+                    We are proud to be one of the top immigration consultants
+                    in Pakistan. We are committed to assisting our clients in
+                    reaching their dreams of Australian immigration and UK
+                    study visa by advising them with the best immigration
+                    consultancy solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-bottom-div">
+            <div class="blog-bottom-left-div">
+              <span>#travel</span>
+              <span>#visa</span>
+              <span>#ticket</span>
+              <span>#e-visa</span>
+              <span>#e-visa</span>
+            </div>
+            <div class="blog-bottom-right-div">
+              <div class="blog-buttom-view">
+                <div class="blog-button-view-div">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                  <p>250k views</p>
+                </div>
+              </div>
+              <div class="blog-buttom-time">
+                <div class="blog-button-time-div">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  <p>250k views</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <i class="fa fa-angle-right blog-left-angle" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="blog-review-line">
+    <div class="full-line"></div>
+  </div>
+  <div class="main-div-our-customers">
+    <div class="div-our-customers">
+      <div class="our-customers-heading">
+        <p>Our Customers</p>
+      </div>
+
+      <div class="our-customers-text">
+        <div class="our-customers-left">
+          <div class="circle-img"></div>
+          <div class="our-customers-div-1-1">
+            <span class="fa fa-star our-customers-star-cls"></span>
+            <span class="fa fa-star star-cls"></span>
+            <span class="fa fa-star star-cls"></span>
+            <span class="fa fa-star star-cls"></span>
+            <span class="fa fa-star star-cls"></span>
+          </div>
+        </div>
+        <div class="our-customers-right">
+          <p>
+            Expert Opinion exceeded my expectations in helping me secure my
+            student dependent visa. Their team was knowledgeable, responsive,
+            and calm throughout the entire process. I appreciated their
+            attention to detail and proactive communication.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="our-customers-bottom-div">
+    <div class="our-customers-bottom">
+      <img src="./Pictures/clarity_arrow-line.png" class="our-customers-bottom-left-arrow" alt="" />
+      <p>1/3</p>
+      <img src="./Pictures/clarity_arrow-line-1.png" class="our-customers-bottom-left-arrow" alt="" />
+    </div>
+  </div>
+  <div class="main-footer-div">
+    <div class="footer-div">
+      <div class="footer-box">
+        <div class="footer-box-top">
+          <div class="footer-left-div">
+            <div class="footer-logo-div">
+              <a href="index.html">
+                <img src="./Pictures/logo-slogan-white.png" alt="" />
+              </a>
+            </div>
+            <div class="footer-e-mail-div">
+              <div class="left-footer-center">
+                <input type="email" placeholder="E-mail" />
+                <button class="left-footer-center-btn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div class="center-right-div">
+            <div class="footer-center-div">
+              <div class="center-footer">
+                <div class="footer-pages-heading">
+                  <!-- <p>Pages</p> -->
+                </div>
+                <div class="footer-center-heading-div">
+                  <ul class="header-right-ul">
+                    <li class="header-right-ul-li">
+                      <a href="index.html" class="header-right-ul-li-a">Home</a>
+                    </li>
+                    <li class="header-right-ul-li">
+                      <a href="about_us.html" class="header-right-ul-li-a">About us</a>
+                    </li>
+                    <li class="header-right-ul-li">
+                      <a href="services.html" class="header-right-ul-li-a">Services</a>
+                    </li>
+                    <!-- <li class="header-right-ul-li">
+                                      <a href="#" class="header-right-ul-li-a">Exhibition</a>
+                                  </li>  -->
+                    <li class="header-right-ul-li">
+                      <a href="#" class="header-right-ul-li-a">Blog</a>
+                    </li>
+                    <li class="header-right-ul-li">
+                      <a href="contact_us.html" class="header-right-ul-li-a">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-right-div">
+              <div class="footer-right-contact-div">
+                <!-- <p>Contact Us</p> -->
+              </div>
+              <div class="footer-right-number-div">
+                <div class="footer-right-icon-contact">
+                  <i class="fa fa-phone contact-icon" aria-hidden="true"></i>
+                </div>
+                <div class="footer-right-contact-detail">
+                  <p>+92 300 960 1729</p>
+                </div>
+              </div>
+              <div class="footer-right-email-div">
+                <div class="footer-right-icon-contact">
+                  <i class="fa fa-envelope-o contact-icon" aria-hidden="true"></i>
+                </div>
+                <div class="footer-right-contact-detail">
+                  <p>info@traveldementor.com</p>
+                </div>
+              </div>
+              <div class="footer-right-address-div">
+                <div class="footer-right-icon-contact">
+                  <i class="fa fa-map-marker contact-icon" aria-hidden="true"></i>
+                </div>
+                <div class="footer-right-contact-detail">
+                  <p>
+                    71-1, Opp. Civil Defence Office, Sargodha-40100-Pakistan
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-e-mail-div-2">
+          <div class="left-footer-center">
+            <input type="email" placeholder="E-mail" />
+            <button class="left-footer-center-btn">Subscribe</button>
+          </div>
+        </div>
+        <div class="footer-box-bottom">
+          <div class="left-footer-center-bottom">
+            <div class="footer-center-div-1-1">
+              <span class="fa fa-envelope-o footer-center-icon-cls"></span>
+              <span class="fa fa-youtube-play footer-center-icon-cls"></span>
+              <span class="fa fa-facebook footer-center-icon-cls"></span>
+              <span class="fa fa-instagram footer-center-icon-cls"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>©2025 Travel de Mentor – All Right Reserved</p>
+    </div>
+  </div>
+  <div class="scroll-div">
+    <div class="scroll-to-top" id="scrollToTopBtn">
+      <img src="./Pictures/logo icon scrool-to-top.png" alt="" />
+    </div>
+  </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/scrol-loder-top.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
