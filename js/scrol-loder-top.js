@@ -44,6 +44,6 @@ scrollToTopBtn.onclick = function () {
 
 
   AOS.init({
-    duration: 800, // animation duration
+    duration: 600, // animation duration
     once: false     // animate only once
   });
