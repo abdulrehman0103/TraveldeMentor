@@ -139,132 +139,159 @@ document.addEventListener('click', () => {
   });
 });
 
+ $(document).ready(function () {
+  const detailDivs = $(".services-detail-div");
+  const visaDivs = $(".business-visa-div");
 
-const cards = [
-  {
-    img: "./Pictures/Business Visa.png",
-    heading: "BUSINESS VISA",
-    detail:
-      "Whether to attend a Business Meeting or to participate in an International Exhibition, We ensure you meet all requirements.",
-  },
-  {
-    img: "./Pictures/Tourist Visa.png",
-    heading: "TOURIST VISA",
-    detail:
-      "Ready to explore new Destinations? Let us handle the paper work and logistics of securing your tourist visa so you can focus on creating unforgettable travel memories.",
-  },
-  {
-    img: "./Pictures/family Friend Visit post.jpg",
-    heading: "Family/Friend Visit",
-    detail:
-      "Reuniting with family members is Priceless. We will assist You in obtaining the necessary visa for your family or friend’s visit, making the journey to see your loved ones stress-free.",
-  },
-  {
-    img: "./Pictures/Visa Appeal Services post.jpg",
-    heading: "Visa Appeal Services",
-    detail:
-      "Our Expert Team Provides Personalized Support By Meticulously Reviewing Each Case and Crafting Strategic Appeal Arguments. ",
-  },
-  {
-    img: "./Pictures/E-Visa post.jpg",
-    heading: "E-Visa",
-    detail:
-      "An E-visa is a digital visa that lets you apply online, saving time and ef ort. Countries like Thailand, Malaysia  and Baku E-visasfor Pakistani travelers, making travel simple and convenient!",
-  },
-];
+  function resetVisaStyles() {
+    visaDivs.css({
+      "background-color": "",
+      "box-shadow": "",
+    });
 
-let currentIndex = 0;
-let autoSlideInterval;
+    visaDivs.find(".business-visa-icon-div img").each(function () {
+      const src = $(this).attr("src").replace("-light-golden", "-blue");
+      $(this).attr("src", src);
+    });
 
-const leftArrow = document.querySelector(".fa-angle-left");
-const rightArrow = document.querySelector(".fa-angle-right");
-const servicesLeft = document.querySelector(".services-left");
-const servicesRight = document.querySelector(".services-right");
+    visaDivs.find(".business-visa-name-div").css("color", "#c59c3d");
+    visaDivs.find(".business-visa-view-detail-div").css("color", "#c59c3d");
 
-function updateCards() {
-  // 🌟 First reset left card background and text color
-  const leftCardTextBox = document.querySelector(
-    ".services-left .services-text-box"
-  );
-  const leftCardDetail = document.querySelector(
-    ".services-left .services-detail"
-  );
+    visaDivs.find(".business-visa-view-detail-div img").each(function () {
+      const src = $(this).attr("src").replace("-light-golden", "-blue");
+      $(this).attr("src", src);
+    });
 
-  if (leftCardDetail) {
-    leftCardDetail.style.color = "white"; // reset text color
+    detailDivs.removeClass("active zoom-in").addClass("zoom-out").hide();
   }
 
-  // (your existing code for updating images and text)
-  let leftCardIndex = currentIndex;
-  let rightCardIndex = (currentIndex + 1) % cards.length;
+  visaDivs.each(function (index) {
+    $(this).on("mouseenter", function () {
+      resetVisaStyles();
 
-  const leftCard = cards[leftCardIndex];
-  const rightCard = cards[rightCardIndex];
+      $(this).css({
+        "background-color": "#2f345b",
+        "box-shadow": "0 0 4px 1px #f2cd74",
+      });
 
-  servicesLeft.querySelector(".services-img").src = leftCard.img;
-  servicesLeft.querySelector(".services-heading").textContent =
-    leftCard.heading;
-  servicesLeft.querySelector(".services-detail").textContent = leftCard.detail;
+      $(this)
+        .find(".business-visa-icon-div img")
+        .each(function () {
+          const src = $(this).attr("src").replace("-blue", "-light-golden");
+          $(this).attr("src", src);
+        });
 
-  servicesRight.querySelector(".services-img").src = rightCard.img;
-  servicesRight.querySelector(".services-heading").textContent =
-    rightCard.heading;
-  servicesRight.querySelector(".services-detail").textContent =
-    rightCard.detail;
+      $(this).find(".business-visa-name-div").css("color", "white");
+      $(this).find(".business-visa-view-detail-div").css("color", "#f2cd74");
 
-  updateDots();
-  // animateBackgroundChange(); // 🌟 Apply new background + text color
-}
+      $(this)
+        .find(".business-visa-view-detail-div img")
+        .each(function () {
+          const src = $(this).attr("src").replace("-blue", "-light-golden");
+          $(this).attr("src", src);
+        });
 
-leftArrow.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-  updateCards();
-  resetAutoSlide();
-});
+      $(this).addClass("zoom-in").removeClass("zoom-out");
 
-rightArrow.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % cards.length;
-  updateCards();
-  resetAutoSlide();
-});
+      const currentDetail = detailDivs.eq(index);
+      currentDetail.removeClass("zoom-out").addClass("zoom-in active").show();
+    });
 
-// Select all your existing dots
-const dots = document.querySelectorAll(".services-dots .dot-1");
-
-// Add click event listeners to each dot
-dots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    currentIndex = index;
-    updateCards();
-    resetAutoSlide();
+    $(this).on("mouseleave", function () {
+      $(this).removeClass("zoom-in").addClass("zoom-out");
+      resetVisaStyles();
+    });
   });
 });
 
-// Update dot active state
-function updateDots() {
-  const allDots = document.querySelectorAll(".services-dots .dot-1");
-  allDots.forEach((dot, index) => {
-    if (index === currentIndex) {
-      dot.classList.add("active");
-    } else {
-      dot.classList.remove("active");
+
+
+
+  $(document).ready(function () {
+  $(".business-visa-div-sm").click(function (e) {
+    e.stopPropagation(); // Prevent bubbling up to document
+
+    let $parentBox = $(this).closest(".business-visa-heading-detail-box-sm");
+    let isActive = $parentBox.hasClass("active");
+
+    // Reset all boxes
+    $(".business-visa-heading-detail-box-sm").removeClass("active").css("height", "5rem");
+    $(".business-visa-div-sm").css({
+      height: "80%",
+      backgroundColor: "",
+    });
+    $(".business-visa-icon-div-sm img").each(function () {
+      // Reset icons (replace with default blue icons)
+      let src = $(this).attr("src");
+      if (src.includes("light-golden")) {
+        $(this).attr("src", src.replace("light-golden", "blue"));
+      }
+    });
+    $(".business-visa-name-div-sm p").css("color", "#c59c3d");
+    $(".business-visa-view-detail-div-sm p").css("color", "#c59c3d");
+    $(".business-visa-view-detail-div-sm img").each(function () {
+      let src = $(this).attr("src");
+      if (src.includes("light-golden")) {
+        $(this).attr("src", src.replace("light-golden", "blue"));
+      }
+    });
+    $(".services-detail-div-sm").removeClass("active").slideUp();
+
+    // If already active, don't expand again
+    if (!isActive) {
+      // Expand current box
+      $parentBox.addClass("active").css("height", "30rem");
+      $(this).css({
+        height: "15%",
+        backgroundColor: "#2f345b",
+      });
+
+      // Change icon
+      let $iconImg = $(this).find(".business-visa-icon-div-sm img");
+      let src = $iconImg.attr("src");
+      if (src.includes("blue")) {
+        $iconImg.attr("src", src.replace("blue", "light-golden"));
+      }
+
+      // Change text colors
+      $(this).find(".business-visa-name-div-sm p").css("color", "white");
+      $(this).find(".business-visa-view-detail-div-sm p").css("color", "white");
+
+      // Change arrow icon
+      let $arrowImg = $(this).find(".business-visa-view-detail-div-sm img");
+      let arrowSrc = $arrowImg.attr("src");
+      if (arrowSrc.includes("blue")) {
+        $arrowImg.attr("src", arrowSrc.replace("blue", "light-golden"));
+      }
+
+      // Show details section
+      $parentBox.find(".services-detail-div-sm").addClass("active").slideDown();
     }
   });
-}
 
-// Auto Slide Function
-function startAutoSlide() {
-  autoSlideInterval = setInterval(() => {
-    currentIndex = (currentIndex + 1) % cards.length;
-    updateCards();
-  }, 5000); // every 5 seconds
-}
-
-function resetAutoSlide() {
-  clearInterval(autoSlideInterval);
-  startAutoSlide();
-}
-
-// Initialize
-updateCards();
-startAutoSlide();
+  // Click outside to close
+  $(document).click(function (e) {
+    if (!$(e.target).closest(".business-visa-heading-detail-box-sm").length) {
+      $(".business-visa-heading-detail-box-sm").removeClass("active").css("height", "5rem");
+      $(".business-visa-div-sm").css({
+        height: "80%",
+        backgroundColor: "",
+      });
+      $(".business-visa-icon-div-sm img").each(function () {
+        let src = $(this).attr("src");
+        if (src.includes("light-golden")) {
+          $(this).attr("src", src.replace("light-golden", "blue"));
+        }
+      });
+      $(".business-visa-name-div-sm p").css("color", "#c59c3d");
+      $(".business-visa-view-detail-div-sm p").css("color", "#c59c3d");
+      $(".business-visa-view-detail-div-sm img").each(function () {
+        let src = $(this).attr("src");
+        if (src.includes("light-golden")) {
+          $(this).attr("src", src.replace("light-golden", "blue"));
+        }
+      });
+      $(".services-detail-div-sm").removeClass("active").slideUp();
+    }
+  });
+});

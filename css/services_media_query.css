@@ -485,7 +485,9 @@
     z-index: 0;
   }
 
-  .services-heading-div {
+
+
+.services-heading-div {
     display: none;
   }
 
@@ -587,8 +589,8 @@
   }
 
   .services-detail-div-sm {
-    width: 90%;
-    height: 65%;
+    width: 95%;
+    height: 70%;
     background-color: #2f345b;
     border-radius: 1rem;
     flex-direction: column;
@@ -605,30 +607,31 @@
 
   .services-detail-icon {
     width: 100%;
-    height: 20%;
+    height: 15%;
   }
 
   .services-detail-icon img {
-    width: 20%;
+    width: auto;
+    height: 100%;
   }
 
   .services-detail-heading {
     width: 100%;
-    height: 20%;
+    height: 25%;
     font-family: zurchn-regular;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: white;
     text-transform: uppercase;
   }
 
   .services-detail-para {
     width: 90%;
-    height: 40%;
+    height: 50%;
     font-family: zurchn-regular;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #f2cd74;
     text-align: center;
-    line-height: 2rem;
+    line-height: 1.5rem;
     align-items: self-start;
   }
 
@@ -651,6 +654,21 @@
       transform: scale(1);
     }
   }
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
 
   .more-services-main-div {
     width: 95%;

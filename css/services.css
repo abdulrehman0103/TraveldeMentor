@@ -232,6 +232,9 @@ html::-webkit-scrollbar {
   color: #c59c3d;
 }
 
+
+
+
 .services-heading-div {
   width: 100%;
   height: 30rem;
@@ -402,7 +405,22 @@ html::-webkit-scrollbar {
 .services-heading-div-sm{
   display: none;
 }
-/* small screen size end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .more-services-div {
   width: 100%;
   background-color: #2f345b;

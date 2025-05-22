@@ -9,12 +9,6 @@ a {
 }
 
 
-
-
-
-
-
-
 .sm-nav-main-div {
     display: none;
 }
@@ -594,134 +588,217 @@ html::-webkit-scrollbar {
     padding-right: 10px;
 }
 
-.services-main-div {
-    width: 100%;
-    height: 40rem;
+
+
+
+
+.services-heading-div {
+  width: 100%;
+  height: 30rem;
+}
+/* extra large , large , medium screen size start */
+.services-heading-box {
+  width: 80%;
+  height: 100%;
 }
 
-.services-left-angle {
-    font-size: 3.125rem;
-    font-weight: bold;
-    display: none;
+.services-heading-left {
+  width: 60%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-/* When hovering over the main div, show the arrows */
-.services-main-div:hover .services-left-angle {
-    display: block;
+.business-visa-div {
+  width: 90%;
+  height: 15%;
+  border-radius: 1rem;
+  border: #f2cd74 solid 2px;
+  justify-content: space-around;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.services-div {
-    width: 80%;
-    height: 100%;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
-.services-left {
-    width: 45%;
-    height: 100%;
+.business-visa-div.pulsing {
+  animation: pulse 1s ease-in-out;
 }
 
-.services-left-box {
-    width: 90%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: end;
+.business-visa-icon-div {
+  width: 15%;
+  height: 100%;
 }
 
-.services-img-div {
-    width: 30%;
-    height: 30%;
-    position: absolute;
-    top: -12%;
-    left: 35%;
+.business-visa-icon-div img {
+  height: 65%;
 }
 
-.services-img {
-    width: 100%;
-    border-radius: 1.25rem;
-    box-shadow: 0px 0px 8px 1px #2f345b;
+.business-visa-name-div {
+  width: 60%;
+  height: 100%;
+  font-family: zurchn-regular;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c59c3d;
+  text-transform: capitalize;
+  justify-content: flex-start;
 }
 
-.services-text-div {
-    width: 100%;
-    height: 80%;
-    position: relative;
+.business-visa-view-detail-div {
+  width: 25%;
+  height: 100%;
+  font-family: zurchn-regular;
+  font-size: 1.5rem;
+  color: #c59c3d;
+  justify-content: flex-start;
 }
 
-.services-text-box {
-    width: 100%;
-    height: 95%;
-    background-color: #c59c3d;
-    border-radius: 1.25rem;
-    display: flex;
-    align-items: flex-end;
-    box-sizing: border-box;
+.business-visa-view-detail-div p {
+  width: 65%;
 }
 
-/* Target the heading inside services-text-box when hovering */
-.services-text-box:hover {
-    background-color: #f2cd74;
-    /* New background on hover */
-    box-shadow: 0px 0px 12px 1px #2f345b;
-    transition-duration: 1s;
+.business-visa-view-detail-div img {
+  width: 14%;
 }
 
-.services-text-box-div {
-    width: 100%;
-    height: 70%;
-    flex-direction: column;
-    justify-content: flex-start;
+.services-heading-right {
+  width: 40%;
+  height: 100%;
 }
 
-.services-heading {
-    color: #2f345b;
-    font-family: zurchn-regular;
-    font-weight: bold;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    text-align: center;
-    box-sizing: border-box;
-    padding-bottom: 1.5rem;
+.services-detail-div {
+  width: 70%;
+  height: 80%;
+  background-color: #2f345b;
+  border-radius: 1rem;
+  flex-direction: column;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  box-shadow: 0 0 7px 3px #f2cd74;
+  /* ✨ added shadow */
 }
 
-.services-detail {
-    font-family: zurchn-regular;
-    font-size: 1.5rem;
-    color: white;
-    box-sizing: border-box;
-    padding: 0px 1.5rem;
-    text-align: justify;
-    line-height: 2.2rem;
+.services-detail-div.active {
+  display: flex !important;
+  opacity: 1;
 }
 
-.services-right {
-    width: 45%;
-    height: 100%;
+.services-detail-icon {
+  width: 100%;
+  height: 20%;
 }
 
-.services-dots-div {
-    width: 100%;
-    height: 5rem;
+.services-detail-icon img {
+  width: 20%;
 }
 
-.services-dots {
-    width: 10%;
-    height: 100%;
-    justify-content: space-between;
+.services-detail-heading {
+  width: 100%;
+  height: 20%;
+  font-family: zurchn-regular;
+  font-size: 2.2rem;
+  color: white;
+  text-transform: uppercase;
 }
 
-.dot-1 {
-    width: 1rem;
-    height: 1rem;
-    background-color: #f2cd74;
-    transform: rotate(45deg);
-    border-radius: 2px;
+.services-detail-para {
+  width: 90%;
+  height: 40%;
+  font-family: zurchn-regular;
+  font-size: 1.2rem;
+  color: #f2cd74;
+  text-align: center;
+  line-height: 2rem;
+  align-items: self-start;
 }
 
-/* Active dot color */
-.services-dots .dot-1.active {
-    background-color: #2f345b;
-    /* active color */
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
 }
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 0.3s forwards;
+}
+
+.zoom-out {
+  animation: zoomOut 0.3s forwards;
+}
+
+/* extra large , large , medium screen size end */
+
+
+
+/* small screen size start */
+.services-heading-div-sm{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* .exhibitions-left{
     width: 35%;
