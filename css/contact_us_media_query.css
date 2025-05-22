@@ -266,10 +266,10 @@
   .sm-nav-main-div {
     width: 100%;
     height: 60rem;
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
     position: fixed;
-    background-color: #2f345b;
   }
 
   .ms-navbar {
@@ -392,6 +392,7 @@
 }
 .contact-us-detail-box {
     width: 90%;
+    z-index: 0;
 }
 .logo-div {
     width: 75%;
@@ -420,6 +421,9 @@
 .heading-office-address{
   margin-bottom: 0.5rem;
 }
+.question-main-div{
+  z-index: 0;
+}
 .question-box {
     width: 90%;
 }
@@ -445,7 +449,9 @@ form {
 input[type="text"], input[type="email"], select, textarea {
     font-size: 1rem;
 }
-
+.location-map-div{
+  z-index: 0;
+}
 
 
 

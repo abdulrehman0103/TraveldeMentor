@@ -372,7 +372,7 @@
     flex-direction: column;
     align-items: flex-end;
     position: fixed;
-    background-color: #2f345b;
+    display: flex;
   }
 
   .ms-navbar {
@@ -481,6 +481,8 @@
     padding: 0rem 1rem;
     text-align: center;
     line-height: 1.8rem;
+    position: sticky;
+    z-index: 0;
   }
 
   .services-heading-div {
@@ -490,6 +492,8 @@
   .services-heading-div-sm {
     display: flex;
     width: 100%;
+    position: sticky;
+    z-index: 0;
   }
 
   .services-heading-box {
@@ -503,9 +507,15 @@
     flex-direction: column;
     justify-content: space-evenly;
   }
+.more-services-div{
+  position: sticky;
+  z-index: 0;
+}
 
   .expert-visa-assistance {
     font-size: 2rem;
+    position: sticky;
+    z-index: 0;
   }
 
   .services-heading-left {
@@ -720,6 +730,14 @@
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.7rem;
+    position: sticky;
+    z-index: 0;
+  }
+
+
+  .guidance-at-every-step-div{
+    position: sticky;
+    z-index: 0;
   }
 
   .guidance-at-every-step-main-div {

@@ -1,11 +1,4 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   setTimeout(function () {
-//     const preloader = document.querySelector(".preloader");
-//     if (preloader) {
-//       preloader.style.display = "none";
-//     }
 
-    // Only apply nav styles on small screens (e.g., width < 768px)
     if (window.innerWidth < 769) {
       const nav = document.querySelector(".ms-navbar");
       const navIcon = document.querySelector(".ms-nav-icon");
@@ -14,8 +7,6 @@
       if (navIcon) navIcon.style.display = "flex"; // or "block"
     }
 
-//   }, 2000);
-// });
 
 
 function msbar(){
