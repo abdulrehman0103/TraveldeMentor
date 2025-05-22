@@ -41,3 +41,9 @@ scrollToTopBtn.onclick = function () {
     behavior: "smooth",
   });
 };
+
+
+  AOS.init({
+    duration: 800, // animation duration
+    once: false     // animate only once
+  });
