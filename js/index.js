@@ -17,16 +17,12 @@
 //   }, 2000);
 // });
 
-
-
-
 function msbar(){
   var msNavbar = document.querySelector('.ms-navbar');
   msNavbar.style.right="0%";
   msNavbar.style.transition="right .5s ease "; 
   var msNavbar = document.querySelector('.ms-nav-icon');
   msNavbar.style.zIndex="0";
-
 
 }
 function msCross() {
@@ -42,13 +38,54 @@ function msCross() {
   }, 500); // 500ms to match transition
 }
 
+$(document).ready(function () {
+  // Initial state
+  $(".message-1, .post-1").css("right", "2%");
+  $(".message-2, .post-2").css("right", "-50%");
 
+  let showingMessage1 = true;
 
+  function toggleMessages() {
+    // Stop switching if large post is shown
+    if ($(".congratulation-message-main-div-1:visible").length > 0) {
+      return;
+    }
 
+    if (showingMessage1) {
+      // Animate message-1 and post-1 out
+      $(".message-1, .post-1").animate({ right: "-50%" }, 500);
+      // Animate message-2 and post-2 in
+      $(".message-2").animate({ right: "2%" }, 500);
+      $(".post-2").animate({ right: "3%" }, 500);
+    } else {
+      $(".message-2, .post-2").animate({ right: "-50%" }, 500);
+      $(".message-1").animate({ right: "2%" }, 500);
+      $(".post-1").animate({ right: "3%" }, 500);
+    }
 
+    showingMessage1 = !showingMessage1;
+  }
 
+  // Run toggle every 5 seconds
+  setInterval(toggleMessages, 5000);
 
+  // Hover effects
+  // $(".congratulation-message-main-div").mouseenter(function () {
+  //   const $this = $(this);
+  //   const index = $(".congratulation-message-main-div").index(this) + 1;
+  //   $this.slideUp("fast", function () {
+  //     $(".post-" + index).css("display", "flex").hide().slideDown("fast");
+  //   });
+  // });
 
+  // $(".congratulation-message-main-div-1").mouseleave(function () {
+  //   const $this = $(this);
+  //   const index = $(".congratulation-message-main-div-1").index(this) + 1;
+  //   $this.slideUp("fast", function () {
+  //     $(".message-" + index).hide().slideDown("fast");
+  //   });
+  // });
+});
 
  $(document).ready(function () {
     // When nav icon is clicked
@@ -73,17 +110,6 @@ function msCross() {
       }, 500); // Match the transition time
     };
   });
-
-
-
-
-
-
-
-
-
-
-
 
 document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
   const dropdown = wrapper.querySelector('.customDropdown');
@@ -204,9 +230,6 @@ document.addEventListener('click', () => {
   });
 });
 
-
-
-
   $(document).ready(function () {
   $(".business-visa-div-sm").click(function (e) {
     e.stopPropagation(); // Prevent bubbling up to document
@@ -295,3 +318,42 @@ document.addEventListener('click', () => {
     }
   });
 });
+
+  $(document).ready(function () {
+    var options = $(".option").get();
+
+    options.sort(function (a, b) {
+        var A = $(a).text().toUpperCase();
+        var B = $(b).text().toUpperCase();
+        return A.localeCompare(B);
+    });
+
+    $.each(options, function (i, div) {
+        $(div).parent().append(div);
+    });
+});
+
+$(document).ready(function () {
+    $('.btn-div button').click(function () {
+      // Get selected values
+      let selects = $('.custom-select-box');
+      let fromCountry = selects.eq(0).find('.selectedText').text().trim();
+      let toCountry = selects.eq(1).find('.selectedText').text().trim();
+      let visaType = selects.eq(2).find('.selectedText').text().trim();
+
+      if (fromCountry === 'Pakistan' && toCountry === 'United States America' && visaType.toLowerCase() === 'business visa') {
+        window.open('business-visa-search.html', '_blank'); // open in new tab
+        // or use window.location.href = 'business-visa.html'; to open in same tab
+      } else if (fromCountry === 'Pakistan' && toCountry === 'United States America' && visaType.toLowerCase() === 'tourist visa'){
+        window.open('tourist-visa-search.html', '_blank');
+      } else if (fromCountry === 'Pakistan' && toCountry === 'United States America' && visaType.toLowerCase() === 'e-visa'){
+        window.open('E-visa-search.html', '_blank');
+      } else if (fromCountry === 'Pakistan' && toCountry === 'United States America' && visaType.toLowerCase() === 'visa appeal'){
+        window.open('visa-appeal-search.html', '_blank');
+      } else if (fromCountry === 'Pakistan' && toCountry === 'United States America' && visaType.toLowerCase() === 'family/friend visa'){
+        window.open('friend-visa-search.html', '_blank');
+      }else {
+        alert("Please select: Pakistan, United States, and Business Visa to proceed.");
+      }
+    });
+  });

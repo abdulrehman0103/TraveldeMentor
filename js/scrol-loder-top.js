@@ -5,11 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
         preloader.style.display = "none";
       }
   
-    }, 5000);
+    }, 2000);
   });
-
-
-
 
 window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY;
@@ -18,7 +15,6 @@ window.addEventListener("scroll", () => {
     document.getElementById("scroll-progress-bar").style.height =
       scrollPercent + "%";
   });
-
 
   const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -42,8 +38,11 @@ scrollToTopBtn.onclick = function () {
   });
 };
 
-
   AOS.init({
     duration: 600, // animation duration
     once: false     // animate only once
   });
+
+
+
+  
