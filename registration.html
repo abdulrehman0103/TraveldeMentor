@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="png" href="./images/icon.png">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/registration.css">
+</head>
+<body>
+    <div class="full-div">
+        <div class="center-div">
+            <div class="logo-div">
+                <img src="./images/logo.png" alt="" class="logo-img">
+            </div>
+            <div class="fome-div">
+                <div class="fome-div-1">
+                    <!-- <h1>fome</h1> -->
+                    <form action="" class="form">
+                        <div class="reg-div">
+                            <p class="p-reg">registration</p>
+                        </div>
+                        <div class="first-name-div">
+                            <div class="first-name-icon">
+                                <img src="./images/user.png" alt="" class="user-icon">
+                            </div>
+                            <div class="input-first-name">
+                                <input type="text" class="input-box" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="first-name-div">
+                            <div class="first-name-icon">
+                                <img src="./images/user.png" alt="" class="user-icon">
+                            </div>
+                            <div class="input-first-name">
+                                <input type="text" class="input-box" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="first-name-div">
+                            <div class="first-name-icon">
+                                <img src="./images/email.png" alt="" class="user-icon">
+                            </div>
+                            <div class="input-first-name">
+                                <input type="email" class="input-box" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="first-name-div">
+                            <div class="first-name-icon">
+                                <img src="./images/password.png" alt="" class="user-icon">
+                            </div>
+                            <div class="input-first-name">
+                                <input type="password" class="input-box" placeholder="Password"  id="password" >
+                                <img src="./images/dark-eye.png" alt="" class="eye-icon" id="toggle-password"  onclick="togglePassword('password', 'toggle-password')">
+                            </div>
+                        </div>
+                        <div class="first-name-div">
+                            <div class="first-name-icon">
+                                <img src="./images/password.png" alt="" class="user-icon">
+                            </div>
+                            <div class="input-first-name">
+                                <input type="password" class="input-box" placeholder="Confirm Password"  id="confirm-password">
+                                <img src="./images/dark-eye.png" alt="" class="eye-icon" id="toggle-confirm-password" onclick="togglePassword('confirm-password', 'toggle-confirm-password')">
+                            </div>
+                        </div>
+                        <div class="btn-div">
+                            <button class="btn"> Signup</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+    <script>
+        function togglePassword(fieldId, iconId) {
+            let field = document.getElementById(fieldId);
+            let icon = document.getElementById(iconId);
+
+            if (field.type === "password") {
+                field.type = "text";
+                icon.src = "./images/eye-slash.png"; // Change to eye-slash
+            } else {
+                field.type = "password";
+                icon.src = "./images/dark-eye.png"; // Change back to eye
+            }
+        }
+
+
+</script>
+</body>
+</html>
