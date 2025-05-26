@@ -1,0 +1,441 @@
+@font-face {
+  font-family: zurchn-regular;
+  src: url("../fonts/zurchn.ttf");
+}
+
+a {
+  text-decoration: none;
+  color: #2f345b;
+}
+
+.sm-nav-main-div {
+  display: none;
+}
+
+.ms-nav-icon {
+  display: none;
+}
+
+.ms-header-box {
+  display: none;
+}
+
+/* Preloader styling */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  /* background-image: url(../Pictures/loder-backgound-1.png);
+    background-size: cover; */
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Loader styling */
+.loader {
+  width: 400px;
+  /* Adjust based on your logo size */
+  height: 400px;
+  /* Adjust based on your logo size */
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* Loader image styling */
+.loader-img {
+  width: 100%;
+  height: auto;
+  clip-path: inset(0 100% 0 0);
+  /* Initially hides the image */
+  animation: slideImage 2s steps(20) infinite;
+  /* Adjust number of steps based on logo width */
+  z-index: 9999;
+}
+
+/* Animation to reveal the image */
+@keyframes slideImage {
+  to {
+    clip-path: inset(0 -100% 0 0);
+    /* Reveals the image by animating the clip-path */
+  }
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide scrollbar for all browsers */
+html::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+#scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 8px;
+  /* Thickness */
+  height: 0%;
+  /* Now height will change, not width */
+  background-color: #c59c3d;
+  /* Your main color */
+  z-index: 9989;
+  transition: height 1s ease-out;
+}
+
+.scroll-div {
+  height: 60px;
+  width: 60px;
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.scroll-to-top {
+  height: 60px;
+  width: 60px;
+  background: #c59c3d;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+}
+
+.scroll-to-top img {
+  width: 80%;
+}
+.main-navbar {
+  width: 100%;
+  height: 5rem;
+}
+
+.navbar {
+  width: 70%;
+  height: 70%;
+}
+
+.header-left {
+  width: 30%;
+  height: 100%;
+}
+
+.header-left-box {
+  width: 80%;
+  height: 100%;
+}
+
+.logo-img {
+  width: 100%;
+}
+
+.header-right {
+  width: 70%;
+  height: 95%;
+  background-color: hsla(0, 0%, 95%, 0.71);
+  border-radius: 0.75rem;
+}
+
+.header-right-box {
+  width: 80%;
+  height: 100%;
+}
+
+.header-right-ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-right-ul-li-a {
+  font-family: zurchn-regular;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #2f345b;
+}
+
+.header-right-box-btn {
+  width: 20%;
+  height: 100%;
+}
+
+.header-right-btn {
+  font-family: zurchn-regular;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: capitalize;
+  background-color: #2f345b;
+  border: none;
+  border-radius: 0.75rem;
+  height: 2.5rem;
+  width: 9rem;
+}
+
+.main-div-p {
+  font-family: zurchn-regular;
+  font-size: 5rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+
+
+.main-footer-div {
+    width: 100%;
+    height: 30rem;
+    background-color: #c59c3d;
+    background-image: url(../Pictures/bildings.png);
+    background-size: cover;
+    flex-direction: column;
+}
+
+.footer-div {
+    width: 100%;
+    height: 90%;
+    align-items: flex-end;
+}
+
+.footer-box {
+    width: 80%;
+    height: 90%;
+    flex-direction: column;
+}
+
+.footer-box-top {
+    width: 100%;
+    height: 85%;
+}
+
+.footer-left-div {
+    width: 35%;
+    height: 100%;
+    align-items: self-start;
+    flex-direction: column;
+}
+
+.footer-logo-div {
+    width: 100%;
+    height: 25%;
+    justify-content: left;
+    align-items: self-start;
+}
+
+.footer-logo-div img {
+    width: 60%;
+}
+
+.footer-e-mail-div {
+    width: 100%;
+    height: 75%;
+    justify-content: left;
+}
+.footer-e-mail-div-2 {
+    display: none;
+}
+.left-footer-center {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    justify-content: left;
+}
+
+.left-footer-center input {
+    width: 65%;
+    border-radius: 0rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #2f345b;
+    color: white;
+    font-family: zurchn-regular;
+    font-size: 1.5rem;
+}
+
+.left-footer-center input:focus,
+input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari  */
+    color: white;
+}
+
+
+.left-footer-center-btn {
+    color: white;
+    background-color: #2f345b;
+    font-family: zurchn-regular;
+    font-size: 1.2rem;
+    border: none;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 34%;
+    bottom: 46%;
+}
+
+.left-footer-center-bottom {
+    width: 80%;
+    height: 30%;
+    justify-content: start;
+}
+.center-right-div{
+    width: 65%;
+    height: 100%;
+}
+.footer-center-div {
+    width: 30%;
+    height: 100%;
+}
+
+.center-footer {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.footer-pages-heading {
+    width: 100%;
+    height: 22%;
+    align-items: self-start;
+    justify-content: flex-start;
+    font-family: zurchn-regular;
+    color: #2f345b;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer-center-heading-div {
+    width: 50%;
+    height: 60%;
+    align-items: self-start;
+}
+
+.footer-center-heading-div ul {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-center-heading-div ul li a {
+    color: white;
+    letter-spacing: 1.2px;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.footer-right-div {
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-right-contact-div {
+    width: 100%;
+    height: 22%;
+    font-family: zurchn-regular;
+    color: #2f345b;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: flex-start;
+    align-items: self-start;
+}
+
+.footer-right-number-div {
+    width: 100%;
+    height: 15%;
+}
+
+.footer-right-icon-contact {
+    width: 7%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    color: #f2cd74;
+    font-size: 2rem;
+}
+
+.footer-right-contact-detail {
+    width: 93%;
+    height: 100%;
+    align-items: self-start;
+    justify-content: flex-start;
+    font-family: zurchn-regular;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+
+.footer-right-email-div {
+    width: 100%;
+    height: 15%;
+}
+
+.footer-right-address-div {
+    width: 100%;
+    height: 15%;
+}
+
+.footer-box-bottom {
+    width: 100%;
+    height: 15%;
+}
+
+.left-footer-center-bottom {
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+}
+
+.footer-center-div-1-1 {
+    width: 15%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.footer-center-icon-cls {
+    background-color: #f2cd74;
+    color: #2f345b;
+    font-size: 1.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 10%;
+    background-color: #f2cd74;
+    color: #c59c3d;
+    font-family: zurchn-regular;
+}

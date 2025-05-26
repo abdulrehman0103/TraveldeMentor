@@ -113,9 +113,9 @@ $(document).ready(function () {
 
 document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
   const dropdown = wrapper.querySelector('.customDropdown');
+  if (!dropdown) return; // Skip if no dropdown found
   const dropdownIcon = wrapper.querySelector('.dropdownIcon');
   const searchInput = wrapper.querySelector('.searchInput');
-  const selectedFlag = wrapper.querySelector('.selectedFlag');
   const selectedText = wrapper.querySelector('.selectedText');
   const options = wrapper.querySelectorAll('.option');
 
@@ -140,8 +140,7 @@ document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
       const flagUrl = option.dataset.flag;
       const countryName = option.textContent.trim();
 
-      selectedFlag.src = flagUrl;
-      selectedFlag.style.display = 'inline';
+    
       selectedText.innerText = countryName;
 
       dropdown.style.display = 'none';
@@ -334,26 +333,76 @@ document.addEventListener('click', () => {
 });
 
 $(document).ready(function () {
-    $('.btn-div button').click(function () {
-      // Get selected values
-      let selects = $('.custom-select-box');
-      let fromCountry = selects.eq(0).find('.selectedText').text().trim();
-      let toCountry = selects.eq(1).find('.selectedText').text().trim();
-      let visaType = selects.eq(2).find('.selectedText').text().trim();
 
-      if (fromCountry === 'Pakistan' && toCountry === 'United States America' && visaType.toLowerCase() === 'business visa') {
-        window.open('business-visa-search.html', '_blank'); // open in new tab
-        // or use window.location.href = 'business-visa.html'; to open in same tab
-      } else if (fromCountry === 'Pakistan' && toCountry === 'United States America' && visaType.toLowerCase() === 'tourist visa'){
-        window.open('tourist-visa-search.html', '_blank');
-      } else if (fromCountry === 'Pakistan' && toCountry === 'United States America' && visaType.toLowerCase() === 'e-visa'){
-        window.open('E-visa-search.html', '_blank');
-      } else if (fromCountry === 'Pakistan' && toCountry === 'United States America' && visaType.toLowerCase() === 'visa appeal'){
-        window.open('visa-appeal-search.html', '_blank');
-      } else if (fromCountry === 'Pakistan' && toCountry === 'United States America' && visaType.toLowerCase() === 'family/friend visa'){
-        window.open('friend-visa-search.html', '_blank');
-      }else {
-        alert("Please select: Pakistan, United States, and Business Visa to proceed.");
-      }
-    });
+  const stickerVisaOnlyCountries = [
+    'Australia', 'Belgium', 'Brazil', 'Canada', 'China', 'Denmark', 'Finland', 'France', 'Germany', 'Greece',
+    'Ireland', 'Italy', 'Japan', 'Netherlands', 'Norway', 'South Africa', 'Spain', 'Sweden', 'Switzer Land',
+    'UK', 'USA'
+  ];
+
+  const eVisaOnlyCountries = [
+    'Azerbaijan', 'Bahrain', 'Cambodia', 'Hong Kong', 'Korea', 'New Zealand',
+    'Sadie Arabia', 'Thailand', 'UAE', 'Vietnam'
+  ];
+
+  const bothVisaCountries = ['Indonesia', 'Malaysia', 'Morocco', 'Turkey'];
+
+  // Function to update Visa Type options based on selected country
+  function updateVisaOptions(country) {
+    const visaBox = $('#visaTypeBox .custom-dropdown');
+    const selectedText = $('#visaTypeBox .selectedText');
+
+    visaBox.empty(); // Remove existing options
+    visaBox.append('<input type="text" class="searchInput" placeholder="Search..." />');
+
+    // Append appropriate visa types
+    if (stickerVisaOnlyCountries.includes(country)) {
+      visaBox.append('<div class="option">Sticker Visa</div>');
+      selectedText.text('Sticker Visa');
+    } else if (eVisaOnlyCountries.includes(country)) {
+      visaBox.append('<div class="option">E-visa</div>');
+      selectedText.text('E-visa');
+    } else if (bothVisaCountries.includes(country)) {
+      visaBox.append('<div class="option">Sticker Visa</div>');
+      visaBox.append('<div class="option">E-visa</div>');
+      selectedText.text('Select type');
+    } else {
+      visaBox.append('<div class="option">Sticker Visa</div>');
+      visaBox.append('<div class="option">E-visa</div>');
+      selectedText.text('Select type');
+    }
+  }
+
+  // Bind country selection (using event delegation for dynamic content)
+  $('#toCountryBox .custom-dropdown').on('click', '.option', function () {
+    const country = $(this).text().trim();
+    $('#toCountryBox .selectedText').text(country);
+    updateVisaOptions(country);
   });
+
+  // Bind visa type selection
+  $('#visaTypeBox .custom-dropdown').on('click', '.option', function () {
+    const visaType = $(this).text().trim();
+    $('#visaTypeBox .selectedText').text(visaType);
+  });
+
+  // Search button click
+  $('.btn-div button').click(function () {
+    let selects = $('.custom-select-box');
+    let toCountry = selects.eq(1).find('.selectedText').text().trim();
+    let category = selects.eq(2).find('.selectedText').text().trim();
+    let visaType = selects.eq(3).find('.selectedText').text().trim().toLowerCase();
+
+    if (toCountry === 'Australia' && category.toLowerCase() === 'business visa' && visaType === 'sticker visa') {
+      window.open('business-visa-search.html', '_blank');
+    } else if (toCountry === 'Australia' && category.toLowerCase() === 'tourist visa' && visaType === 'sticker visa') {
+      window.open('tourist-visa-search.html', '_blank');
+    } else if (toCountry === 'Australia' && category.toLowerCase() === 'family/friend visa' && visaType === 'sticker visa') {
+      window.open('E-visa-search.html', '_blank');
+    } else if (toCountry === 'Australia' && category.toLowerCase() === 'visa appeal' && visaType === 'sticker visa') {
+      window.open('visa-appeal-search.html', '_blank');
+    } else {
+      alert("Please select all the options correctly.");
+    }
+  });
+});

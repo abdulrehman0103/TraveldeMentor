@@ -358,6 +358,26 @@ html::-webkit-scrollbar {
     flex-direction: column;
     align-items: flex-start;
 }
+.where-am-i-from{
+    width: 25%;
+}
+.type-of-visa{
+    width: 22%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .lable {
     width: 100%;
