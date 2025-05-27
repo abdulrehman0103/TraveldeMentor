@@ -394,13 +394,13 @@ $(document).ready(function () {
     let visaType = selects.eq(3).find('.selectedText').text().trim().toLowerCase();
 
     if (toCountry === 'Australia' && category.toLowerCase() === 'business visa' && visaType === 'sticker visa') {
-      window.open('business-visa-search.html', '_blank');
+      window.open('search-filter.html', '_blank');
     } else if (toCountry === 'Australia' && category.toLowerCase() === 'tourist visa' && visaType === 'sticker visa') {
-      window.open('tourist-visa-search.html', '_blank');
+      window.open('search-filter.html', '_blank');
     } else if (toCountry === 'Australia' && category.toLowerCase() === 'family/friend visa' && visaType === 'sticker visa') {
-      window.open('E-visa-search.html', '_blank');
+      window.open('search-filter.html', '_blank');
     } else if (toCountry === 'Australia' && category.toLowerCase() === 'visa appeal' && visaType === 'sticker visa') {
-      window.open('visa-appeal-search.html', '_blank');
+      window.open('search-filter.html', '_blank');
     } else {
       alert("Please select all the options correctly.");
     }

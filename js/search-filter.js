@@ -47,3 +47,61 @@ $(document).ready(function () {
     }, 500); // Match the transition time
   };
 });
+
+
+
+
+
+$(document).ready(function() {
+    // Initial setup: show overview
+    $('.overview-detail-div').css('display', 'flex');
+    $('.filter-detail-heading-div').eq(0).css({
+        'color': '#c59c3d',
+        'border-bottom': '3px solid #c59c3d'
+    });
+
+    // Click handler
+    $('.filter-detail-heading-div').click(function() {
+        // Index of clicked tab
+        var index = $(this).index();
+
+        // Set all heading tabs to default color
+        $('.filter-detail-heading-div').css({
+            'color': '#f2cd74',
+            'border-bottom': '3px solid #f2cd74'
+        });
+
+        // Highlight clicked tab
+        $(this).css({
+            'color': '#c59c3d',
+            'border-bottom': '3px solid #c59c3d'
+        });
+
+        // Hide all detail sections
+        $('.overview-detail-div, .requirements-detail-div, .packages-detail-div, .services-detail-div, .reviews-detail-div, .policies-detail-div').hide();
+
+        // Show corresponding detail section
+        switch(index) {
+            case 0:
+                $('.overview-detail-div').css('display', 'flex');
+                break;
+            case 1:
+                $('.requirements-detail-div').css('display', 'flex');
+                break;
+            case 2:
+                $('.packages-detail-div').css('display', 'flex');
+                break;
+            case 3:
+                $('.services-detail-div').css('display', 'flex');
+                break;
+            case 4:
+                $('.reviews-detail-div').css('display', 'flex');
+                break;
+            case 5:
+                $('.policies-detail-div').css('display', 'flex');
+                break;
+        }
+    });
+});
+
+
