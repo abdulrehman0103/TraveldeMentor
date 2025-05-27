@@ -92,12 +92,9 @@ $(document).ready(function() {
                 $('.packages-detail-div').css('display', 'flex');
                 break;
             case 3:
-                $('.services-detail-div').css('display', 'flex');
-                break;
-            case 4:
                 $('.reviews-detail-div').css('display', 'flex');
                 break;
-            case 5:
+            case 4:
                 $('.policies-detail-div').css('display', 'flex');
                 break;
         }

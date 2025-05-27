@@ -238,7 +238,7 @@ html::-webkit-scrollbar {
 }
 
 .img {
-    background-image: url(../Pictures/image.png);
+    background-image: url(../Pictures/bangkok-tourist-e1743577180729.png);
     background-size: cover;
     width: 90%;
     height: 90%;
@@ -260,16 +260,43 @@ html::-webkit-scrollbar {
     justify-content: space-around;
 }
 
-.img-right-1-div,
-.img-right-2-div,
-.img-right-3-div,
-.img-right-4-div {
-    background-image: url(../Pictures/image.png);
+.img-right-1-div{
+    background-image: url(../Pictures/grand-palace-wat-phaew-thailand-scaled.jpg);
     background-size: cover;
     width: 45%;
     height: 100%;
     border-radius: 1rem;
 }
+
+.img-right-2-div{
+    background-image: url(../Pictures/thailand_nature_7321530c5a.jpg);
+    background-size: cover;
+    width: 45%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.img-right-3-div{
+    background-image: url(../Pictures/008c39e51aae8e2d2cd5e7d57fb71d5a_1000x1000.jpg);
+    background-size: cover;
+    width: 45%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.img-right-4-div{
+    background-image: url(../Pictures/istockphoto-1345573076-612x612.jpg);
+    background-size: cover;
+    width: 45%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
 .filer-detail-heading-main-div{
     width: 100%;
     height: 5rem;
@@ -279,7 +306,7 @@ html::-webkit-scrollbar {
     height: 100%;
 }
 .filter-detail-heading-div{
-    width: 16%;
+    width: 20%;
     height: 60%;
     border-bottom: #f2cd74 solid 3px;
     color: #f2cd74;
@@ -291,51 +318,92 @@ html::-webkit-scrollbar {
 
 .overview-detail-div{
     width: 100%;
-    height: 40rem;
+    height: auto;
 }
 .overview-detail-box{
-    width: 67%;
+    width: 70%;
     height: 100%;
     flex-direction: column;
+    justify-content: flex-start;    
     font-family: zurchn-regular;
 }
 .overview-heading{
     width: 100%;
-    height: 10%;
+    height: auto;
+    margin-top: 1.5rem;
     font-family: zurchn-regular;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+     text-transform:uppercase ;
+    text-align: center;
+    letter-spacing: 2px;
     color: #c59c3d;
     justify-content: left;
 }
+.overview-paragraph{
+    font-family: zurchn-regular;
+    font-size: 1.5rem;
+    color: #2f345b;
+    line-height: 2rem;
+    margin: 1.5rem 0rem;
+    text-align: justify;
+
+}
+.overview-paragraph-heading{
+    width: 100%;
+    justify-content: left;
+    font-family: zurchn-regular;
+    font-size: 2rem;
+    color: #c59c3d;
+    line-height: 2rem;
+}
+
+.overview-detail-box ul{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    color: #2f345b;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+.overview-detail-box ul li{
+    list-style: disc;
+}
+li::marker {
+  color: #c59c3d;
+}
+
 .overview-detail-box ol{
     width: 100%;
-    height: 90%;
+    margin: 1.5rem 0rem;
     color: #2f345b;
     font-size: 1.5rem;
     line-height: 2.5rem;
 }
 .overview-detail-box ol li{
     list-style: auto;
-
 }
+
 
 
 .requirements-detail-div{
     width: 100%;
-    height: 40rem;
+    height: auto;
     display: none;
 }
 .requirements-detail-box{
     width: 67%;
-    height: 100%;
     flex-direction: column;
     font-family: zurchn-regular;
 }
 .req-heading{
     width: 100%;
-    height: 10%;
+    margin: 1.5rem 0rem;
     font-family: zurchn-regular;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+     text-transform:uppercase ;
+    text-align: center;
     color: #c59c3d;
     justify-content: left;
 }
@@ -345,97 +413,244 @@ html::-webkit-scrollbar {
     color: #2f345b;
     font-size: 1.5rem;
     line-height: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 .requirements-detail-box ol li{
     list-style: auto;
 
 }
 
-
 .packages-detail-div{
     width: 100%;
-    height: 40rem;
+    height: auto;
     display: none;
 }
 .packages-detail-box{
     width: 67%;
-    height: 100%;
     flex-direction: column;
     font-family: zurchn-regular;
 }
 .packages-heading{
     width: 100%;
-    height: 10%;
+    margin-top: 1.5rem;
+    font-weight: bold;
     font-family: zurchn-regular;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform:uppercase ;
+    text-align: center;
     color: #c59c3d;
     justify-content: left;
 }
 .packages-detail-box ol{
     width: 100%;
-    height: 90%;
-    color: #2f345b;
-    font-size: 1.5rem;
+    margin: 1.5rem 0rem;
+    color: #c59c3d;
+    font-size: 2rem;
     line-height: 2.5rem;
 }
 .packages-detail-box ol li{
     list-style: auto;
-
+    margin-top: 1rem;
 }
-
-.services-detail-div{
+.packages-paragraph{
+  width: 100%;
+    margin: 1rem 0rem;
+    color: #2f345b;
+    font-size: 1.5rem;
+    line-height: 2.5rem;  
+}
+.packages-detail-heading{
+    color: white;
+    font-size: 2rem; 
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c59c3d;
+    border-radius: 0.5rem;
+}
+.packages-detail-box ol li ul{
     width: 100%;
-    height: 40rem;
-    display: none;
-}
-.services-detail-box{
-    width: 67%;
-    height: 100%;
-    flex-direction: column;
-    font-family: zurchn-regular;
-}
-.services-heading{
-    width: 100%;
-    height: 10%;
-    font-family: zurchn-regular;
-    font-size: 2rem;
-    color: #c59c3d;
-    justify-content: left;
-}
-.services-detail-box ol{
-    width: 100%;
-    height: 90%;
+    margin: 1rem 0rem;
     color: #2f345b;
     font-size: 1.5rem;
     line-height: 2.5rem;
 }
-.services-detail-box ol li{
-    list-style: auto;
-
+.packages-detail-box ol li ul li{
+    list-style: disc;
+    margin: 0rem 0rem 0.5rem 0rem;
 }
+.packages-paragraph-last{
+  width: 100%;
+  color: #2f345b;
+  font-size: 1.5rem; 
+}
+.packages-price{
+    width:15rem;
+    height: 3rem;
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid #2f345b;
+    color: #2f345b;
+    margin: 2rem 0rem;
+}
+
 
 .reviews-detail-div{
     width: 100%;
-    height: 40rem;
+    height: auto;
     display: none;
 }
 .reviews-detail-box{
     width: 67%;
-    height: 100%;
     flex-direction: column;
     font-family: zurchn-regular;
 }
 .reviews-heading{
     width: 100%;
-    height: 10%;
+    margin-top: 1.5rem;
     font-family: zurchn-regular;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform:uppercase ;
+    letter-spacing: 2px;
     color: #c59c3d;
+    text-align: center;
+}
+.reviews-rating{
+    width: 100%;
+    height: auto;
+    color: #2f345b;
+    font-family:zurchn-regular;
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: self-start;
+}
+.reviews-rating-heading{
+    width: 100%;
+    height: auto;
+     font-size: 1.5rem;
+    margin: 1.5rem 0rem;
+    padding: 0.5rem 0.5rem;
+    color:#c59c3d ;
+    background-color: #f2cc743a;
+}
+.ratings{
+    width: 100%;
+    margin-top: .5rem;
     justify-content: left;
 }
+.ratings i{
+    color: #c59c3d;
+    margin-left: .5rem;
+}
+.ratings-div{
+    width: 15rem;
+    height: 0.9rem;
+    border: 0.1rem solid #c59c3d;
+    margin-left: 1rem;
+    justify-content: left;
+}
+.ratings-div-1{
+    width: 75%;
+    height: 100%;
+    background-color: #f2cd74;
+}
+.ratings-div-2{
+    width: 60%;
+    height: 100%;
+    background-color: #f2cd74;
+}
+.ratings-div-3{
+    width: 40%;
+    height: 100%;
+    background-color: #f2cd74;
+}
+.ratings-div-4{
+    width: 25%;
+    height: 100%;
+    background-color: #f2cd74;
+}
+.ratings-div-5{
+    width: 10%;
+    height: 100%;
+    background-color: #f2cd74;
+}
+
+.ratings p{
+    font-size: 1.2rem;
+    margin-left: .5rem;
+    width: 100%;
+    margin-top: .5rem;
+    justify-content: left;
+}
+.reviews-clint-detail-div{
+    width: 100%;
+    align-items: self-start;
+    flex-direction: column;
+}
+.reviews-stars{
+    width: 9%;
+    color: #c59c3d;
+    font-size: 1.3rem;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+.reviews-stars i{
+    margin-left: .2rem;
+}
+.author-name-time-div{
+    width: 100%;
+    height: auto;
+    color:#2f345b;
+    font-family: zurchn-regular;
+    font-size: 1.5rem;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+.author-name{
+    margin-right:0.7rem;
+    font-weight: bold;
+}
+.review-time{
+    font-size: 1rem;
+    color: #c59c3d;
+}
+.clint-review-para{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .reviews-detail-box ol{
     width: 100%;
-    height: 90%;
+    margin: 1.5rem 0rem;
     color: #2f345b;
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -446,52 +661,46 @@ html::-webkit-scrollbar {
 }
 
 
+
+
+
+
+
+
+
+
 .policies-detail-div{
     width: 100%;
-    height: 40rem;
+    height: auto;
     display: none;
 }
 .policies-detail-box{
     width: 67%;
-    height: 100%;
     flex-direction: column;
     font-family: zurchn-regular;
 }
 .policies-heading{
     width: 100%;
-    height: 10%;
+    margin-top: 1.5rem;
     font-family: zurchn-regular;
-    font-size: 2rem;
+    font-size: 2.5rem;
+     text-transform:uppercase ;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
     color: #c59c3d;
     justify-content: left;
 }
-.policies-detail-box ol{
+.policies-detail-box ul{
     width: 100%;
-    height: 90%;
+    margin: 1.5rem 0rem;
     color: #2f345b;
     font-size: 1.5rem;
     line-height: 2.5rem;
 }
-.policies-detail-box ol li{
-    list-style: auto;
-
+.policies-detail-box ul li{
+    list-style: disc;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main-footer-div {
     width: 100%;
     height: 30rem;
