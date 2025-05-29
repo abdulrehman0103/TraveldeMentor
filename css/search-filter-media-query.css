@@ -1,41 +1,37 @@
 @media only screen and (min-width: 981px) and (max-width: 1400px) {
 
   /*laptop and small lcd [1001px -> 1200px]*/
-  .hero-bg-img {
-    height: 30rem;
-    background-image: url(../Pictures/our-services.png);
-    background-size: cover;
-  }
 
-  .main-div {
-    height: 30rem;
-    background-color: hsl(233deg 32% 27% / 50%);
-  }
-
-  .main-navbar {
-    height: 16%;
-  }
-
-  .navbar {
-    width: 90%;
-    height: 70%;
-  }
-
-  .header-left {
-    width: 25%;
-    justify-content: flex-start;
-  }
-
-  .header-left-box {
-    width: 90%;
-  }
-  .banifits-box {
-    width: 90%;
-  }
-  .banifits-left-heading-div {
-    font-size: 1.8rem;
-  }
-
+.main-navbar{
+  height: 5rem;
+}
+.navbar{
+  width: 90%;
+}
+.filter-page-heading-box{
+  width: 85%;
+}
+.imges-box{
+  width: 90%;
+}
+.filter-detail-heading-box{
+  width: 85%;
+}
+.overview-detail-box{
+  width: 85%;
+}
+.requirements-detail-box{
+  width: 85%;
+}
+.packages-detail-box{
+  width: 85%;
+}
+.reviews-detail-box{
+  width: 85%;
+}
+.policies-detail-box{
+  width: 85%;
+}
 
   .footer-box {
     width: 95%;
@@ -113,47 +109,12 @@
     height: 2.2rem;
     width: 7rem;
   }
-  .banifits-box {
-    width: 90%;
-  }
-  .banifits-left-heading-div {
-    font-size: 1.2rem;
-  }
-  .banifits-left-detail-div {
-    height: 60%;
-    font-size: 1rem;
-  }
-  .logo-div {
-    height: 15%;
-}
-  .logo-div img {
-    height: 65%;
-}
-.detail-heading-div {
-    font-size: 2rem;
-}
-.detail-p-div {
-    font-size: 1.2rem;
-}
-.office-address-div {
-    height: 8%;
-    font-size: 1.2rem;
-}
-.question-box {
-    width: 90%;
-}
-.question-heading-div {
-    font-size: 2rem;
-}
-.question-form-left-div {
-    width: 30%;
-}
-.question-form-left-div video {
-    height: 60%;
-}
-.question-form-right-div{
-    width: 70%;
-}
+  
+
+
+
+
+
 
 
   .footer-box {
@@ -371,90 +332,7 @@
   .header-right {
     display: none;
   }
-  .banifits-main-div {
-    height: 35rem;
-}
-  .banifits-box{
-    flex-direction: column;
-    width: 90%;
-  }
-  .banifits-left-box {
-    width: 85%;
-    height: 30%;
-  }
-  .banifits-left-heading-div {
-    font-size: 1.5rem;
-  }
-  .banifits-left-detail-div {
-    height: 80%;
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-.contact-us-detail-box {
-    width: 90%;
-    z-index: 0;
-}
-.logo-div {
-    width: 75%;
-    height: 10%;
-}
-.logo-div img {
-    width: 75%;
-    height: auto;
-}
-.detail-heading-div {
-    font-size: 1.5rem;
-}
-.detail-p-div {
-    height: 15%;
-    font-size: 1rem;
-    text-align: center;
-    line-height: 1.5rem;
-}
-.office-address-div{
-  flex-direction: column;
-    height: 18%;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 1.5rem;
-}
-.heading-office-address{
-  margin-bottom: 0.5rem;
-}
-.question-main-div{
-  z-index: 0;
-}
-.question-box {
-    width: 90%;
-}
-.question-heading-div {
-    height: 5%;
-    font-size: 2rem;
-}
-.question-form-div {
-    height: 90%;
-    flex-direction: column;
-}
-.question-form-left-div {
-    width: 50%;
-    height: 30%;
-}
-.question-form-right-div {
-    width: 100%;
-}
-form {
-    width: 90%;
-    align-items: center;
-}
-input[type="text"], input[type="email"], select, textarea {
-    font-size: 1rem;
-}
-.location-map-div{
-  z-index: 0;
-}
-
-
-
+ 
 
 
 
