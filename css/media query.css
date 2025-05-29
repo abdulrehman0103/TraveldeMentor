@@ -29,6 +29,48 @@
     .header-left-box {
         width: 90%;
     }
+
+
+    .congratulation-message-main-div {
+  width: 18%;
+  position: absolute;
+  top: 25%;
+  right: -50%; /* Start off-screen */
+  
+}
+
+
+
+
+
+    .congratulation-message-div {
+    width: 28%;
+    right: 2%;
+}
+.congratulation-message-detail-div {
+    width: 90%;
+}
+.client-name{
+    padding: 0px;
+}
+.category{
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .search-box {
         width: 90%;
     }
@@ -172,6 +214,43 @@
         height: 2.2rem;
         width: 7rem;
     }
+
+
+
+
+    .congratulation-message-main-div {
+  width: 18%;
+  position: absolute;
+  top: 25%;
+  right: -50%; /* Start off-screen */
+  
+}
+
+
+    .congratulation-message-div {
+    width: 35%;
+    right: 2%;
+    top: 8%;
+    }
+    .congratulation-message-detail-div {
+    width: 90%;
+    font-size: 1.5rem;
+    }
+    .client-name {
+    font-size: 0.8rem;
+    padding-bottom: 0;
+    line-height: 1.2rem;
+}
+.category {
+    font-size: 1rem;
+    padding-bottom: 0px;
+}
+
+
+
+
+
+
 
     .search-box {
         width: 95%;
@@ -611,6 +690,60 @@
     .header-right {
         display: none;
     }
+
+
+
+.congratulation-message-main-div {
+  width: 18%;
+  position: absolute;
+  top: 25%;
+  right: -50%; /* Start off-screen */
+  
+}
+
+
+.congratulation-message-div {
+    width: 60%;
+    right: 2%;
+    top: 10%;
+}
+.congratulation-message-detail-div {
+    width: 90%;
+    font-size: 1rem;
+}
+.logo-congratulation {
+    width: 50%;
+}
+.congratulation {
+    margin-bottom: 0.5rem 0rem .5rem 0rem;
+}
+.client-name {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding-bottom: .5rem;
+    line-height: 1rem;
+}
+.category {
+    font-size: 0.8rem;
+    line-height: 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .search-bar-div {
         display: none;
