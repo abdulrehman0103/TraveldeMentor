@@ -58,7 +58,9 @@
 
     /*smartphones [768px]*/
     .registration-box-div{
-            flex-direction: column;
+        width: 90%;
+        flex-direction: column;
+
     }
 
 .registration-left-div {
@@ -81,12 +83,19 @@
     font-size: 1rem;
 }
 .first-name-div p, .last-name-div p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    width: 85%;
 }
 .input-div input {
+    width: 75%;
     border-bottom: 0.1rem solid #2f345b;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
+.input-div img {
+    width: 10%;
+    margin-right: 0.3rem;
+}
+
 .register-button {
     width: 30%;
     font-size: 1.2rem;
