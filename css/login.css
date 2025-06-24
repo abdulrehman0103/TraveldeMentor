@@ -37,7 +37,6 @@ div {
   justify-content: left;
 }
 
-
 .registration-left-div {
   width: 50%;
   height: 100%;
@@ -111,7 +110,7 @@ div {
   margin-right: 0.8rem;
   position: absolute;
   bottom: 10%;
-  left:5%;
+  left: 5%;
   z-index: 9;
 }
 
@@ -127,7 +126,7 @@ div {
   left: 5%;
   bottom: 0%;
   box-sizing: border-box;
-  padding:0% 0% 1% 7%  ;
+  padding: 0% 0% 1% 7%;
 }
 
 /* Hide number input spinners */
@@ -165,51 +164,59 @@ input[type="number"]::-webkit-inner-spin-button {
 .registration-right-div img {
   width: 80%;
 }
-.password-div{
-    position: relative;
+
+.password-div {
+  position: relative;
 }
-.forget-password-div{
-    width: 85%;
-    height: 5%;
-    position: absolute;
-    bottom: 0%;
-    right: 10%;
-    font-family:zurchn-regular;
-    font-size: 1.2rem;
-    color: #c59c3d;
-    justify-content: flex-end;
+
+.forget-password-div {
+  width: 85%;
+  height: 5%;
+  position: absolute;
+  bottom: 0%;
+  right: 10%;
+  font-family: zurchn-regular;
+  font-size: 1.2rem;
+  color: #c59c3d;
+  justify-content: flex-end;
 }
+
 .forget-password-div a {
   color: #c59c3d;
   text-decoration: none;
 }
-.gap{
+
+.gap {
   height: 5%;
 }
 
-.sign-up-links-div{
-    width: 100%;
-    height: 15%;
-    flex-direction: column;
+.sign-up-links-div {
+  width: 100%;
+  height: 15%;
+  flex-direction: column;
 }
-.or-sign-up-using{
-    width: 100%;
-    height: 30%;
-    font-family: zurchn-regular;
-    font-size: 1.5rem;
-    color: #2f345b;
-    text-transform: capitalize;
+
+.or-sign-up-using {
+  width: 100%;
+  height: 30%;
+  font-family: zurchn-regular;
+  font-size: 1.5rem;
+  color: #2f345b;
+  text-transform: capitalize;
 }
-.social-links-div{
-    width: 20%;
-    height: 50%;
-    justify-content: space-evenly;
+
+.social-links-div {
+  width: 20%;
+  height: 50%;
+  justify-content: space-evenly;
 }
+
 .social-links-div a {
   width: 50%;
   display: flex;
   justify-content: center;
 }
+
 .social-links-div img {
   width: 70%;
   height: 100%;
