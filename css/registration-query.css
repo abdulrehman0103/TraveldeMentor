@@ -1,31 +1,111 @@
 @media only screen and (min-width: 981px)and (max-width:1919px) {
 
     /*laptop and small lcd [1001px -> 1200px]*/
-  
 
-.heading-registration-div p{
-    font-size: 1.5rem;
-}
-.first-name-div p, .last-name-div p {
-    font-size: 1.2rem;
-}
-.input-div input {
-    border-bottom: 0.12rem solid #2f345b;
-    font-size: 1.2rem;
-}
-.register-button {
-    
-    font-size: 1.5rem;
-}
+
+    .heading-registration-div p {
+        font-size: 1.5rem;
+    }
+
+    .first-name-div p,
+    .last-name-div p {
+        font-size: 1.2rem;
+    }
+
+    .input-div input {
+        border-bottom: 0.12rem solid #2f345b;
+        font-size: 1.2rem;
+    }
+
+    .register-button {
+
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 980px) {
-    /*tablet [769px -> 980px]*/
 
-  
+    /*tablet [769px -> 980px]*/
+    .registration-box-div {
+        width: 85%;
+        height: 60%;
+    }
+
+    .logo-div img {
+        width: 45%;
+    }
+
+    .heading-registration-div p {
+        font-size: 1.3rem;
+    }
+
+    .first-name-div p,
+    .last-name-div p {
+        font-size: 1rem;
+    }
+
+    .input-div input {
+        font-size: 1rem;
+    }
+
+    .register-button {
+        width: 25%;
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
 
     /*smartphones [768px]*/
+    .registration-box-div{
+            flex-direction: column;
+    }
+
+.registration-left-div {
+    width: 100%;
+    height: 30%;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+.registration-left-div img {
+    width: 50%;
+}
+.registration-right-div{
+    width: 100%;
+    height: 70%;
+}
+.logo-div img {
+    width: 50%;
+}
+.heading-registration-div p {
+    font-family: zurchn-regular;
+    font-size: 1rem;
+}
+.first-name-div p, .last-name-div p {
+    font-size: 0.7rem;
+}
+.input-div input {
+    border-bottom: 0.1rem solid #2f345b;
+    font-size: 0.7rem;
+}
+.register-button {
+    width: 30%;
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
