@@ -21,9 +21,10 @@ div {
 
 .main-div {
   width: 100%;
-  height: 59.8rem;
+  height: 100vh;
   background-image: url("../Pictures/backgound.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .registration-box-div {
