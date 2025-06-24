@@ -82,6 +82,9 @@
     font-family: zurchn-regular;
     font-size: 1rem;
 }
+.heading-registration-div {
+    width: 85%;
+}
 .first-name-div p, .last-name-div p {
     font-size: 0.9rem;
     width: 85%;
