@@ -1,0 +1,32 @@
+@media only screen and (min-width: 981px)and (max-width:1919px) {
+
+    /*laptop and small lcd [1001px -> 1200px]*/
+  
+.main-div {
+  height: 46.5rem;
+}
+.heading-registration-div p{
+    font-size: 1.5rem;
+}
+.first-name-div p, .last-name-div p {
+    font-size: 1.2rem;
+}
+.input-div input {
+    border-bottom: 0.12rem solid #2f345b;
+    font-size: 1.2rem;
+}
+.register-button {
+    
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+    /*tablet [769px -> 980px]*/
+
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+    /*smartphones [768px]*/
+}
