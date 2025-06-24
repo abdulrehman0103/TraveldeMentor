@@ -116,13 +116,21 @@ div {
   position: relative;
 }
 
-.input-div img {
+.icons {
   width: 7%;
   margin-right: 0.8rem;
   position: absolute;
   bottom: 10%;
   left: 10%;
   z-index: 9;
+}
+.eye-icon{
+  width: 7%;
+  right: 10%;
+  position: absolute;
+  bottom: 10%;
+  z-index: 9;
+  cursor: pointer;
 }
 
 .input-div input {

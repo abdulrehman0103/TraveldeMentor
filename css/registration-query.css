@@ -102,10 +102,13 @@
     font-size: 0.9rem;
   }
 
-  .input-div img {
+  .icons {
     width: 8%;
     margin-right: 0.3rem;
     bottom: 12%;
+  }
+  .eye-icon {
+    right: 5%;
   }
 
   .register-button {

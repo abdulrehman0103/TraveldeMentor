@@ -22,6 +22,9 @@
   .or-sign-up-using {
     font-size: 1.2rem;
   }
+  .social-links-div a{
+    width: 70%;
+  }
 
   .register-button {
     font-size: 1.5rem;
@@ -79,6 +82,9 @@
     font-size: 1rem;
   }
 
+  .create-account-div {
+    font-size: 1.2rem;
+}
   .register-button {
     width: 25%;
     height: 6%;
@@ -145,11 +151,15 @@
     width: 75%;
     border-bottom: 0.1rem solid #2f345b;
     font-size: 0.9rem;
+    padding-left: 9%;
   }
-
   .input-div img {
     width: 7%;
     margin-right: 0.3rem;
+  }
+
+  .eye-icon {
+    right: 18%;
   }
 
   .forget-password-div {
@@ -167,6 +177,9 @@
     width: 30%;
   }
 
+    .create-account-div {
+    font-size: 1rem;
+}
   .register-button {
     width: 25%;
     height: 6%;
